@@ -1,0 +1,152 @@
+{
+  "timestamp_utc": "2026-10-29T11:35:40.128524+00:00",
+  "model": "llama3.2:3b",
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  },
+  "scenarios": [
+    {
+      "name": "Retinol with user SPF 50",
+      "degraded_mode": false,
+      "checks": {
+        "not_degraded": true,
+        "morning_is_list": true,
+        "night_is_list": true,
+        "morning_not_empty": true,
+        "night_not_empty": true,
+        "retinol_at_night": true,
+        "retinol_not_in_morning": true,
+        "spf_50_preserved": true
+      },
+      "passed": true,
+      "elapsed_seconds": 31.41,
+      "morning": [
+        "Cleanser: Oil-Free Foaming Cleanser",
+        "Hydrating Moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "night": [
+        "Cleanser: Oil-Free Foaming Cleanser",
+        "Retinol Serum",
+        "Hydrating Moisturizer"
+      ],
+      "conflicts": [],
+      "safety": {
+        "spf_added": false,
+        "applied_edits_count": 1,
+        "warnings": [
+          "Retinoid detected—avoid use during pregnancy or when trying to conceive. Consult your healthcare professional."
+        ],
+        "tips_refined_count": 1
+      }
+    },
+    {
+      "name": "Pregnancy restriction",
+      "degraded_mode": false,
+      "checks": {
+        "not_degraded": true,
+        "morning_is_list": true,
+        "night_is_list": true,
+        "morning_not_empty": true,
+        "night_not_empty": true,
+        "retinol_excluded": true
+      },
+      "passed": true,
+      "elapsed_seconds": 22.55,
+      "morning": [
+        "Hydrating Cream Cleanser",
+        "Moisturizer",
+        "Sunscreen SPF 30+"
+      ],
+      "night": [
+        "Hydrating Cream Cleanser",
+        "Moisturizer"
+      ],
+      "conflicts": [],
+      "safety": {
+        "spf_added": false,
+        "applied_edits_count": 1,
+        "warnings": [
+          "Retinoid detected—avoid use during pregnancy or when trying to conceive. Consult your healthcare professional.",
+          "Retinoids were left out of your routine because you mentioned pregnancy or breastfeeding. Please check with your doctor."
+        ],
+        "tips_refined_count": 0
+      }
+    },
+    {
+      "name": "Multiple active ingredients",
+      "degraded_mode": false,
+      "checks": {
+        "not_degraded": true,
+        "morning_is_list": true,
+        "night_is_list": true,
+        "morning_not_empty": true,
+        "night_not_empty": true,
+        "conflicts_field_is_list": true,
+        "conflict_report_is_not_empty": true,
+        "retinol_salicylic_pair_reported": true
+      },
+      "passed": true,
+      "elapsed_seconds": 21.46,
+      "morning": [
+        "Balancing Gel Cleanser",
+        "Hydrating Moisturizer",
+        "Sunscreen SPF 30+"
+      ],
+      "night": [
+        "Balancing Gel Cleanser",
+        "Retinol Serum",
+        "Hydrating Moisturizer"
+      ],
+      "conflicts": [
+        "Retinol + Salicylic Acid: use with caution due to potential irritation. Introduce products gradually, follow product instructions, and monitor your skin's response."
+      ],
+      "safety": {
+        "spf_added": false,
+        "applied_edits_count": 4,
+        "warnings": [
+          "Conflict detected: Retinol + Salicylic Acid: use with caution due to potential irritation. Introduce products gradually, follow product instructions, and monitor your skin's response.",
+          "Retinoid detected—avoid use during pregnancy or when trying to conceive. Consult your healthcare professional.",
+          "Multiple strong active ingredients detected. Combining them in the same routine may increase irritation. Follow product directions and consider using them on separate days.",
+          "NIGHT contained multiple strong actives. Only Retinol remains in that routine; Salicylic Acid should be used on alternate days instead."
+        ],
+        "tips_refined_count": 2
+      }
+    },
+    {
+      "name": "Unidentified product",
+      "degraded_mode": false,
+      "checks": {
+        "not_degraded": true,
+        "morning_is_list": true,
+        "night_is_list": true,
+        "morning_not_empty": true,
+        "night_not_empty": true,
+        "unknown_product_reported": true,
+        "unknown_product_not_recommended": true
+      },
+      "passed": true,
+      "elapsed_seconds": 19.51,
+      "morning": [
+        "Cleanser: Fragrance-Free Cleanser",
+        "Hydrating Moisturizer",
+        "Sunscreen SPF 30+"
+      ],
+      "night": [
+        "Cleanser: Fragrance-Free Cleanser",
+        "Hydrating Moisturizer"
+      ],
+      "conflicts": [],
+      "safety": {
+        "spf_added": false,
+        "applied_edits_count": 0,
+        "warnings": [
+          "Serum detected, but its active ingredient is unknown. Glowithm did not place it into the routine to avoid assuming its contents."
+        ],
+        "tips_refined_count": 0
+      }
+    }
+  ]
+}

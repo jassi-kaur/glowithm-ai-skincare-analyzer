@@ -1,0 +1,31 @@
+blinker==1.9.0
+certifi==2026.6.17
+charset-normalizer==3.4.9
+click==8.4.2
+colorama==0.4.6
+Flask==3.1.3
+flask-cors==6.0.5
+idna==3.18
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+python-dotenv==1.2.2
+requests==2.34.2
+urllib3==2.7.0
+Werkzeug==3.1.8
+ollama>=0.1.0
+
+# Previously missing — the code imports these but they weren't listed,
+# so a clean "pip install -r requirements.txt" would crash with
+# ModuleNotFoundError. Versions below are unpinned minimums; once your
+# venv is working, run `pip freeze` and replace these lines with the
+# exact versions you've tested against.
+instructor>=1.0.0
+pydantic>=2.0.0
+# conflict_model.joblib was trained with scikit-learn 1.9.0; unpickling with another
+# version warns and can silently change predictions. Retrain, then update this pin.
+scikit-learn==1.9.0
+joblib>=1.3.0
+pandas>=2.0.0
+# tests (optional: `python scripts/run_tests.py` works without pytest)
+pytest>=8.0

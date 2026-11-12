@@ -1,0 +1,1352 @@
+
+/* =========================================================
+   GLOWITHM — INGREDIENT LIBRARY
+   Full Ingredient Library Page
+========================================================= */
+
+
+/* =========================================================
+   01 — GLOBAL LIBRARY VARIABLES
+========================================================= */
+
+:root {
+    --library-bg: #f8f8f3;
+    --library-surface: #ffffff;
+    --library-sage: #264b36;
+    --library-sage-light: #e8eee8;
+    --library-sage-soft: #eef3ed;
+    --library-text: #2e2e2e;
+    --library-muted: #72766f;
+    --library-border: rgba(38, 75, 54, 0.12);
+    --library-shadow: 0 18px 45px rgba(38, 75, 54, 0.08);
+}
+
+
+/* =========================================================
+   02 — LIBRARY HERO
+========================================================= */
+
+.library-hero {
+    position: relative;
+    min-height: 590px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 150px 24px 90px;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(188, 211, 193, 0.35),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #f8f8f3 0%,
+            #eef3ed 55%,
+            #e7eee7 100%
+        );
+
+    overflow: hidden;
+}
+
+
+/* Decorative background glow */
+
+.library-hero::before {
+    content: "";
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    right: -120px;
+    top: 80px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    filter: blur(5px);
+
+    pointer-events: none;
+}
+
+
+.library-hero::after {
+    content: "";
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    left: -100px;
+    bottom: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(38, 75, 54, 0.05);
+
+    pointer-events: none;
+}
+
+
+/* Hero content */
+
+.library-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   03 — HERO BADGE
+========================================================= */
+
+.library-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 9px 17px;
+
+    margin-bottom: 24px;
+
+    border: 1px solid rgba(38, 75, 54, 0.12);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    color: var(--library-sage);
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.library-hero-badge span {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   04 — HERO HEADING
+========================================================= */
+
+.library-hero h1 {
+    margin: 0 auto 24px;
+
+    max-width: 780px;
+
+    color: var(--library-text);
+
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+
+    font-weight: 800;
+    letter-spacing: -0.045em;
+}
+
+
+.library-hero h1 span {
+    display: block;
+
+    color: var(--library-sage);
+}
+
+
+/* =========================================================
+   05 — HERO DESCRIPTION
+========================================================= */
+
+.library-hero-content > p:not(.library-search-message) {
+    max-width: 650px;
+
+    margin: 0 auto 38px;
+
+    color: var(--library-muted);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   06 — SEARCH BOX
+========================================================= */
+
+.library-search-box {
+    width: 100%;
+    max-width: 680px;
+
+    min-height: 64px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    padding: 7px;
+
+    border: 1px solid rgba(38, 75, 54, 0.14);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    box-shadow:
+        0 18px 45px rgba(38, 75, 54, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+    backdrop-filter: blur(16px);
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.library-search-box:focus-within {
+    border-color: rgba(38, 75, 54, 0.3);
+
+    box-shadow:
+        0 20px 50px rgba(38, 75, 54, 0.13),
+        0 0 0 4px rgba(38, 75, 54, 0.05);
+}
+
+
+/* Search icon */
+
+.library-search-icon {
+    width: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--library-sage);
+
+    font-size: 25px;
+    line-height: 1;
+}
+
+
+/* Input */
+
+#library-search-input {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 50px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: var(--library-text);
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+#library-search-input::placeholder {
+    color: #9a9e97;
+}
+
+
+/* Search button */
+
+.library-search-button {
+    height: 50px;
+
+    padding: 0 24px;
+
+    border: none;
+    border-radius: 13px;
+
+    background: var(--library-sage);
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.library-search-button:hover {
+    transform: translateY(-1px);
+
+    background: #1d3d2b;
+
+    box-shadow: 0 8px 20px rgba(38, 75, 54, 0.18);
+}
+
+
+.library-search-button:active {
+    transform: translateY(0);
+}
+
+
+/* Search message */
+
+.library-search-message {
+    min-height: 20px;
+
+    margin: 13px auto 0 !important;
+
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* =========================================================
+   07 — FILTER SECTION
+========================================================= */
+
+.library-filters-section {
+    position: relative;
+    z-index: 5;
+
+    background: var(--library-bg);
+
+    border-bottom: 1px solid rgba(38, 75, 54, 0.07);
+}
+
+
+.library-filters-container {
+    width: min(1240px, calc(100% - 48px));
+
+    margin: 0 auto;
+
+    padding: 28px 0;
+}
+
+
+.library-filters-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* Results count */
+
+.library-results-count {
+    flex-shrink: 0;
+
+    color: var(--library-muted);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   08 — FILTER BUTTONS
+========================================================= */
+
+.library-filters-wrapper {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+.library-filter {
+    padding: 10px 15px;
+
+    border: 1px solid rgba(38, 75, 54, 0.11);
+    border-radius: 999px;
+
+    background: #ffffff;
+
+    color: #60655e;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.library-filter:hover {
+    transform: translateY(-1px);
+
+    border-color: rgba(38, 75, 54, 0.22);
+
+    color: var(--library-sage);
+
+    box-shadow: 0 5px 14px rgba(38, 75, 54, 0.06);
+}
+
+
+.library-filter.active {
+    border-color: var(--library-sage);
+
+    background: var(--library-sage);
+
+    color: #ffffff;
+
+    box-shadow: 0 6px 16px rgba(38, 75, 54, 0.14);
+}
+
+
+/* =========================================================
+   09 — INGREDIENT GRID SECTION
+========================================================= */
+
+.library-grid-section {
+    padding: 80px 0 110px;
+
+    background: var(--library-bg);
+}
+
+
+.library-grid-container {
+    width: min(1240px, calc(100% - 48px));
+
+    margin: 0 auto;
+}
+
+
+/* Grid */
+
+.library-ingredient-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   10 — INGREDIENT CARD
+========================================================= */
+
+.library-ingredient-card {
+    position: relative;
+
+    min-height: 390px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 27px;
+
+    border: 1px solid var(--library-border);
+    border-radius: 24px;
+
+    background: var(--library-surface);
+
+    box-shadow: 0 8px 25px rgba(38, 75, 54, 0.035);
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.library-ingredient-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    right: -65px;
+    top: -65px;
+
+    border-radius: 50%;
+
+    background: var(--library-sage-soft);
+
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease;
+}
+
+
+.library-ingredient-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(38, 75, 54, 0.18);
+
+    box-shadow:
+        0 22px 45px rgba(38, 75, 54, 0.10),
+        0 4px 12px rgba(38, 75, 54, 0.04);
+}
+
+
+.library-ingredient-card:hover::before {
+    transform: scale(1.25);
+
+    opacity: 0.8;
+}
+
+
+/* =========================================================
+   11 — CARD TOP
+========================================================= */
+
+.library-card-top {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+
+/* Ingredient letter icon */
+
+.library-card-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: var(--library-sage-light);
+
+    color: var(--library-sage);
+
+    font-size: 20px;
+    font-weight: 800;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(38, 75, 54, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.library-ingredient-card:hover .library-card-icon {
+    transform: rotate(-3deg) scale(1.05);
+
+    background: #dce8de;
+}
+
+
+/* Category */
+
+.library-card-category {
+    max-width: 150px;
+
+    padding: 7px 10px;
+
+    border-radius: 999px;
+
+    background: var(--library-sage-soft);
+
+    color: var(--library-sage);
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 0.09em;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   12 — CARD BODY
+========================================================= */
+
+.library-card-body {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+
+.library-card-body h3 {
+    margin: 0 0 6px;
+
+    color: var(--library-text);
+
+    font-size: 24px;
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    letter-spacing: -0.025em;
+}
+
+
+.library-card-subtitle {
+    display: block;
+
+    margin-bottom: 17px;
+
+    color: #858a82;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.library-card-body p {
+    margin: 0;
+
+    color: var(--library-muted);
+
+    font-size: 13px;
+    line-height: 1.7;
+
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   13 — CARD TAGS
+========================================================= */
+
+.library-card-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: auto;
+    padding-top: 25px;
+
+    padding-right: 35px;
+}
+
+
+.library-card-tags span {
+    padding: 7px 10px;
+
+    border: 1px solid rgba(38, 75, 54, 0.09);
+    border-radius: 8px;
+
+    background: #fafbf8;
+
+    color: #6e746c;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   14 — CARD ARROW
+========================================================= */
+
+.library-card-arrow {
+    position: absolute;
+
+    right: 24px;
+    bottom: 24px;
+
+    z-index: 3;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(38, 75, 54, 0.10);
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: var(--library-sage);
+
+    font-size: 17px;
+    font-weight: 600;
+
+    box-shadow: 0 5px 15px rgba(38, 75, 54, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.library-ingredient-card:hover .library-card-arrow {
+    transform: translate(2px, -2px);
+
+    background: var(--library-sage);
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   15 — NO RESULTS
+========================================================= */
+
+.library-no-results {
+    grid-column: 1 / -1;
+
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+
+    border: 1px dashed rgba(38, 75, 54, 0.18);
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.6);
+
+    text-align: center;
+}
+
+
+.library-no-results-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 18px;
+
+    background: var(--library-sage-soft);
+
+    font-size: 25px;
+}
+
+
+.library-no-results h3 {
+    margin: 0 0 8px;
+
+    color: var(--library-text);
+
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+.library-no-results p {
+    margin: 0;
+
+    color: var(--library-muted);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   16 — CTA SECTION
+========================================================= */
+
+.library-cta {
+    position: relative;
+
+    padding: 120px 24px;
+
+    background: var(--library-sage);
+
+    overflow: hidden;
+}
+
+
+/* Decorative circles */
+
+.library-cta::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -180px;
+    top: -230px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 0 0 60px rgba(255, 255, 255, 0.025),
+        0 0 0 120px rgba(255, 255, 255, 0.018);
+
+    pointer-events: none;
+}
+
+
+.library-cta::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    left: -140px;
+    bottom: -150px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    pointer-events: none;
+}
+
+
+.library-cta-container {
+    position: relative;
+    z-index: 2;
+
+    width: min(850px, 100%);
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.library-cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================================================
+   17 — CTA EYEBROW
+========================================================= */
+
+.library-cta-eyebrow {
+    margin-bottom: 20px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.18em;
+}
+
+
+/* =========================================================
+   18 — CTA HEADING
+========================================================= */
+
+.library-cta h2 {
+    max-width: 750px;
+
+    margin: 0 0 22px;
+
+    color: #ffffff;
+
+    font-size: clamp(38px, 5vw, 60px);
+
+    line-height: 1.08;
+
+    font-weight: 800;
+
+    letter-spacing: -0.04em;
+}
+
+
+.library-cta h2 span {
+    display: block;
+
+    color: #c9dccb;
+}
+
+
+/* =========================================================
+   19 — CTA DESCRIPTION
+========================================================= */
+
+.library-cta p {
+    max-width: 650px;
+
+    margin: 0 0 34px;
+
+    color: rgba(255, 255, 255, 0.68);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   20 — CTA BUTTON
+========================================================= */
+
+.library-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px 17px 15px 24px;
+
+    border-radius: 999px;
+
+    background: #ffffff;
+
+    color: var(--library-sage);
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.library-cta-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.17);
+}
+
+
+.library-cta-arrow {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--library-sage);
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    transition: transform 0.25s ease;
+}
+
+
+.library-cta-button:hover .library-cta-arrow {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   21 — CTA NOTE
+========================================================= */
+
+.library-cta-note {
+    margin-top: 18px;
+
+    color: rgba(255, 255, 255, 0.42);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 0.03em;
+}
+
+
+/* =========================================================
+   22 — LARGE TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .library-ingredient-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    .library-filters-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .library-filters-wrapper {
+        justify-content: flex-start;
+    }
+}
+
+
+/* =========================================================
+   23 — TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .library-hero {
+        min-height: auto;
+
+        padding: 130px 20px 70px;
+    }
+
+
+    .library-hero h1 {
+        font-size: clamp(38px, 9vw, 56px);
+    }
+
+
+    .library-hero-content > p:not(.library-search-message) {
+        font-size: 14px;
+
+        line-height: 1.7;
+
+        margin-bottom: 30px;
+    }
+
+
+    .library-search-box {
+        min-height: 58px;
+
+        border-radius: 15px;
+    }
+
+
+    .library-search-button {
+        height: 44px;
+
+        padding: 0 17px;
+    }
+
+
+    #library-search-input {
+        height: 44px;
+
+        font-size: 14px;
+    }
+
+
+    .library-search-icon {
+        width: 40px;
+    }
+
+
+    .library-filters-container {
+        width: min(100% - 32px, 1240px);
+
+        padding: 22px 0;
+    }
+
+
+    .library-filters-wrapper {
+        gap: 7px;
+    }
+
+
+    .library-filter {
+        padding: 9px 12px;
+
+        font-size: 11px;
+    }
+
+
+    .library-grid-section {
+        padding: 55px 0 75px;
+    }
+
+
+    .library-grid-container {
+        width: min(100% - 32px, 1240px);
+    }
+
+
+    .library-ingredient-grid {
+        gap: 16px;
+    }
+
+
+    .library-ingredient-card {
+        min-height: 360px;
+
+        padding: 22px;
+
+        border-radius: 20px;
+    }
+
+
+    .library-card-body h3 {
+        font-size: 21px;
+    }
+
+
+    .library-cta {
+        padding: 85px 20px;
+    }
+}
+
+
+/* =========================================================
+   24 — MOBILE
+========================================================= */
+
+@media (max-width: 560px) {
+
+    .library-hero {
+        padding: 115px 16px 55px;
+    }
+
+
+    .library-hero-badge {
+        margin-bottom: 20px;
+
+        padding: 8px 13px;
+
+        font-size: 10px;
+    }
+
+
+    .library-hero h1 {
+        margin-bottom: 19px;
+
+        font-size: 39px;
+
+        letter-spacing: -0.04em;
+    }
+
+
+    .library-hero-content > p:not(.library-search-message) {
+        font-size: 13px;
+    }
+
+
+    /* Search stacks button */
+
+    .library-search-box {
+        min-height: auto;
+
+        flex-wrap: wrap;
+
+        padding: 6px;
+
+        border-radius: 16px;
+    }
+
+
+    .library-search-icon {
+        width: 39px;
+    }
+
+
+    #library-search-input {
+        flex: 1;
+
+        min-width: calc(100% - 55px);
+
+        height: 45px;
+    }
+
+
+    .library-search-button {
+        width: 100%;
+
+        height: 43px;
+
+        margin-top: 4px;
+    }
+
+
+    .library-filters-container {
+        width: calc(100% - 28px);
+
+        padding: 19px 0;
+    }
+
+
+    .library-results-count {
+        font-size: 12px;
+    }
+
+
+    .library-filters-wrapper {
+        width: 100%;
+
+        display: flex;
+
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+
+        padding-bottom: 4px;
+
+        scrollbar-width: none;
+    }
+
+
+    .library-filters-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .library-filter {
+        flex-shrink: 0;
+
+        padding: 8px 12px;
+
+        font-size: 10px;
+    }
+
+
+    .library-grid-section {
+        padding: 40px 0 60px;
+    }
+
+
+    .library-grid-container {
+        width: calc(100% - 28px);
+    }
+
+
+    .library-ingredient-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+
+    .library-ingredient-card {
+        min-height: 340px;
+
+        padding: 21px;
+
+        border-radius: 19px;
+    }
+
+
+    .library-card-top {
+        margin-bottom: 24px;
+    }
+
+
+    .library-card-body h3 {
+        font-size: 22px;
+    }
+
+
+    .library-card-body p {
+        font-size: 13px;
+    }
+
+
+    .library-cta {
+        padding: 75px 18px;
+    }
+
+
+    .library-cta h2 {
+        font-size: 36px;
+    }
+
+
+    .library-cta p {
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+
+    .library-cta-button {
+        width: 100%;
+
+        max-width: 280px;
+
+        justify-content: space-between;
+
+        padding-left: 20px;
+    }
+}
+
+
+/* =========================================================
+   25 — REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .library-ingredient-card,
+    .library-filter,
+    .library-search-button,
+    .library-cta-button,
+    .library-card-arrow,
+    .library-card-icon {
+        transition: none;
+    }
+}

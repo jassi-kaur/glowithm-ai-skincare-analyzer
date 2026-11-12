@@ -1,0 +1,1104 @@
+
+/* =========================================================
+   GLOWITHM — INGREDIENT DETAIL PAGE
+   Premium Minimal / Sage Green / Editorial
+========================================================= */
+
+
+/* =========================================================
+   01 — PAGE FOUNDATION
+========================================================= */
+
+.ingredient-detail-page {
+    min-height: 100vh;
+    padding: 130px 0 110px;
+    background: #f8f8f3;
+    color: #2e2e2e;
+}
+
+.ingredient-detail-container {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   02 — BACK TO LIBRARY
+========================================================= */
+
+.detail-back {
+    margin-bottom: 48px;
+}
+
+.detail-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #536b59;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.detail-back-btn span {
+    font-size: 18px;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+.detail-back-btn:hover {
+    color: #264b36;
+    transform: translateX(-2px);
+}
+
+.detail-back-btn:hover span {
+    transform: translateX(-4px);
+}
+
+
+/* =========================================================
+   03 — MAIN PROFILE
+========================================================= */
+
+.ingredient-profile-wrapper {
+    display: grid;
+    grid-template-columns: minmax(360px, 0.9fr) minmax(0, 1.1fr);
+    gap: 80px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   04 — LEFT VISUAL AREA
+========================================================= */
+
+.ingredient-profile-visual {
+    position: sticky;
+    top: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   05 — IMAGE CONTAINER
+========================================================= */
+
+.detail-image-container {
+    position: relative;
+
+    width: 100%;
+    max-width: 470px;
+    height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 32px;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            rgba(255, 255, 255, 0.95) 0%,
+            rgba(239, 240, 230, 0.92) 48%,
+            rgba(220, 225, 211, 0.88) 100%
+        );
+
+    border: 1px solid rgba(38, 75, 54, 0.08);
+
+    box-shadow:
+        0 30px 70px rgba(38, 75, 54, 0.09),
+        0 8px 25px rgba(38, 75, 54, 0.04);
+}
+
+
+/* Decorative glow */
+
+.detail-image-container::before {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    filter: blur(20px);
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+}
+
+
+/* Decorative ring */
+
+.detail-image-container::after {
+    content: "";
+
+    position: absolute;
+
+    width: 330px;
+    height: 330px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(38, 75, 54, 0.07);
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+}
+
+
+.detail-ingredient-image {
+    position: relative;
+    z-index: 2;
+
+    display: block;
+
+    width: auto;
+    height: 390px;
+
+    max-width: 78%;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 25px 25px rgba(30, 45, 34, 0.15));
+
+    transition:
+        transform 0.45s ease,
+        opacity 0.35s ease;
+}
+
+
+/* Subtle image interaction */
+
+.detail-image-container:hover .detail-ingredient-image {
+    transform: translateY(-6px) scale(1.015);
+}
+
+
+/* =========================================================
+   06 — VISUAL TAGS
+========================================================= */
+
+.detail-visual-tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 22px;
+}
+
+.detail-visual-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 13px;
+
+    border-radius: 999px;
+
+    background: #264b36;
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.detail-visual-tag-secondary {
+    background: rgba(38, 75, 54, 0.08);
+    color: #536b59;
+
+    border: 1px solid rgba(38, 75, 54, 0.09);
+}
+
+
+/* =========================================================
+   07 — VISUAL NAVIGATION
+========================================================= */
+
+.detail-navigation {
+    width: 100%;
+    max-width: 470px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 28px;
+}
+
+.detail-nav-btn {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(38, 75, 54, 0.12);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    color: #264b36;
+
+    font-family: inherit;
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.detail-nav-btn:hover {
+    background: #264b36;
+    color: #ffffff;
+
+    border-color: #264b36;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(38, 75, 54, 0.15);
+}
+
+.detail-nav-btn:active {
+    transform: translateY(0);
+}
+
+.detail-counter {
+    color: #8a9189;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+}
+
+
+/* =========================================================
+   08 — RIGHT INFORMATION
+========================================================= */
+
+.ingredient-profile-info {
+    min-width: 0;
+    padding-top: 4px;
+}
+
+
+/* =========================================================
+   09 — CATEGORY
+========================================================= */
+
+.detail-category {
+    margin: 0 0 16px;
+
+    color: #6b806f;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.16em;
+    line-height: 1.5;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   10 — INGREDIENT NAME
+========================================================= */
+
+.detail-name {
+    margin: 0;
+
+    color: #264b36;
+
+    font-size: clamp(42px, 5vw, 68px);
+    font-weight: 800;
+
+    letter-spacing: -0.055em;
+    line-height: 0.98;
+}
+
+
+/* =========================================================
+   11 — SUBTITLE
+========================================================= */
+
+.detail-subtitle {
+    margin: 15px 0 0;
+
+    color: #737a73;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   12 — META
+========================================================= */
+
+.detail-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-top: 22px;
+
+    color: #626b63;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.detail-meta .meta-dot {
+    color: #aeb5ae;
+}
+
+
+/* =========================================================
+   13 — DIVIDER
+========================================================= */
+
+.detail-divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 34px 0 34px;
+
+    background: rgba(38, 75, 54, 0.10);
+}
+
+
+/* =========================================================
+   14 — DETAIL SECTIONS
+========================================================= */
+
+.detail-section {
+    margin-bottom: 30px;
+}
+
+.detail-section-label {
+    display: block;
+
+    margin-bottom: 11px;
+
+    color: #718174;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 0.16em;
+    line-height: 1.4;
+
+    text-transform: uppercase;
+}
+
+.detail-section-text {
+    margin: 0;
+
+    max-width: 680px;
+
+    color: #555d56;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   15 — BENEFIT LIST
+========================================================= */
+
+.detail-benefit-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.detail-benefit-list li {
+    position: relative;
+
+    padding-left: 21px;
+
+    color: #4f5850;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+.detail-benefit-list li::before {
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    left: 0;
+    top: 9px;
+
+    border-radius: 50%;
+
+    background: #78917e;
+}
+
+
+/* =========================================================
+   16 — TWO COLUMN DETAIL GRIDS
+========================================================= */
+
+.detail-grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 42px;
+
+    margin-bottom: 2px;
+}
+
+.detail-grid-2col .detail-section {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   17 — TAGS
+========================================================= */
+
+.detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.detail-tags span {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 31px;
+
+    padding: 7px 11px;
+
+    border-radius: 8px;
+
+    background: #eef0e9;
+
+    border: 1px solid rgba(38, 75, 54, 0.07);
+
+    color: #56635a;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   18 — CLICKABLE PAIRINGS
+========================================================= */
+
+.detail-tags-clickable span {
+    cursor: pointer;
+
+    background: #f0f3ed;
+    color: #42604b;
+
+    transition:
+        background 0.22s ease,
+        color 0.22s ease,
+        border-color 0.22s ease,
+        transform 0.22s ease;
+}
+
+.detail-tags-clickable span:hover {
+    background: #264b36;
+    border-color: #264b36;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   19 — CAUTION TAGS
+========================================================= */
+
+.detail-tags-caution span {
+    background: #f5f1e9;
+    border-color: rgba(146, 112, 65, 0.10);
+
+    color: #79684f;
+}
+
+
+/* =========================================================
+   20 — ROUTINE BADGES
+========================================================= */
+
+.detail-routine-badges {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.routine-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 31px;
+
+    padding: 7px 13px;
+
+    border-radius: 999px;
+
+    background: #e8eee8;
+
+    border: 1px solid rgba(38, 75, 54, 0.08);
+
+    color: #46614e;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   21 — NOTES
+========================================================= */
+
+.detail-notes {
+    padding: 17px 18px;
+
+    border-left: 2px solid #9aac9d;
+
+    background: rgba(236, 239, 232, 0.55);
+
+    border-radius: 0 10px 10px 0;
+
+    color: #626a63;
+}
+
+
+/* =========================================================
+   22 — SKIN COMPATIBILITY
+========================================================= */
+
+.detail-compatibility {
+    margin-top: 100px;
+    padding-top: 72px;
+
+    border-top: 1px solid rgba(38, 75, 54, 0.10);
+}
+
+
+/* Compatibility heading */
+
+.compatibility-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 34px;
+}
+
+.compatibility-heading .detail-section-label {
+    margin-bottom: 0;
+}
+
+.compatibility-heading p {
+    margin: 0;
+
+    color: #858c85;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   23 — COMPATIBILITY GRID
+========================================================= */
+
+.compatibility-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+
+/* =========================================================
+   24 — COMPATIBILITY CARD
+========================================================= */
+
+.compatibility-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 105px;
+
+    padding: 19px 20px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(38, 75, 54, 0.08);
+
+    border-radius: 16px;
+
+    box-shadow: 0 7px 22px rgba(38, 75, 54, 0.035);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.compatibility-item:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(38, 75, 54, 0.15);
+
+    box-shadow: 0 14px 30px rgba(38, 75, 54, 0.07);
+}
+
+
+/* =========================================================
+   25 — COMPATIBILITY TEXT
+========================================================= */
+
+.compatibility-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+}
+
+.compatibility-info span {
+    color: #4d564f;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.compatibility-info strong {
+    color: #78917e;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   26 — COMPATIBILITY DOTS
+========================================================= */
+
+.compatibility-dots {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    margin-top: 18px;
+}
+
+.compatibility-dots span {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    display: block;
+}
+
+.compatibility-dots .filled {
+    background: #6f8976;
+}
+
+.compatibility-dots .empty {
+    background: #dfe4de;
+}
+
+
+/* =========================================================
+   27 — LOADING / NOT FOUND STATE
+========================================================= */
+
+.detail-loading {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px;
+
+    border-radius: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(38, 75, 54, 0.08);
+}
+
+.detail-loading h2 {
+    margin: 0 0 12px;
+
+    color: #264b36 !important;
+
+    font-size: 28px;
+}
+
+.detail-loading p {
+    margin: 0 0 22px;
+
+    color: #7a827b !important;
+
+    font-size: 14px;
+}
+
+.detail-loading a {
+    color: #53715b !important;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   28 — RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .ingredient-detail-page {
+        padding-top: 110px;
+    }
+
+    .ingredient-profile-wrapper {
+        grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.15fr);
+
+        gap: 50px;
+    }
+
+    .detail-image-container {
+        height: 480px;
+    }
+
+    .detail-ingredient-image {
+        height: 340px;
+    }
+
+    .detail-name {
+        font-size: clamp(40px, 6vw, 58px);
+    }
+
+    .detail-grid-2col {
+        gap: 25px;
+    }
+
+    .compatibility-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   29 — RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .ingredient-detail-page {
+        padding: 100px 0 80px;
+    }
+
+    .ingredient-detail-container {
+        width: min(100% - 32px, 600px);
+    }
+
+    .detail-back {
+        margin-bottom: 30px;
+    }
+
+    .ingredient-profile-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        gap: 48px;
+    }
+
+    .ingredient-profile-visual {
+        position: relative;
+        top: auto;
+
+        width: 100%;
+    }
+
+    .detail-image-container {
+        width: 100%;
+        max-width: none;
+
+        height: 420px;
+
+        border-radius: 26px;
+    }
+
+    .detail-image-container::after {
+        width: 260px;
+        height: 260px;
+    }
+
+    .detail-ingredient-image {
+        height: 300px;
+        max-width: 75%;
+    }
+
+    .detail-navigation {
+        max-width: none;
+    }
+
+    .ingredient-profile-info {
+        padding-top: 0;
+    }
+
+    .detail-name {
+        font-size: clamp(40px, 12vw, 56px);
+    }
+
+    .detail-subtitle {
+        font-size: 15px;
+    }
+
+    .detail-divider {
+        margin: 28px 0;
+    }
+
+    .detail-grid-2col {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .detail-grid-2col .detail-section {
+        margin-bottom: 30px;
+    }
+
+    .detail-compatibility {
+        margin-top: 60px;
+        padding-top: 50px;
+    }
+
+    .compatibility-heading {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 9px;
+
+        margin-bottom: 24px;
+    }
+
+    .compatibility-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   30 — SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .ingredient-detail-page {
+        padding-top: 90px;
+    }
+
+    .ingredient-detail-container {
+        width: calc(100% - 24px);
+    }
+
+    .detail-back-btn {
+        font-size: 12px;
+    }
+
+    .detail-image-container {
+        height: 360px;
+
+        border-radius: 22px;
+    }
+
+    .detail-ingredient-image {
+        height: 255px;
+    }
+
+    .detail-image-container::before {
+        width: 210px;
+        height: 210px;
+    }
+
+    .detail-image-container::after {
+        width: 220px;
+        height: 220px;
+    }
+
+    .detail-visual-tags {
+        gap: 6px;
+    }
+
+    .detail-visual-tag {
+        padding: 7px 10px;
+
+        font-size: 9px;
+    }
+
+    .detail-nav-btn {
+        width: 40px;
+        height: 40px;
+
+        font-size: 16px;
+    }
+
+    .detail-counter {
+        font-size: 10px;
+    }
+
+    .detail-category {
+        font-size: 9px;
+    }
+
+    .detail-name {
+        font-size: 39px;
+
+        letter-spacing: -0.045em;
+    }
+
+    .detail-subtitle {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .detail-meta {
+        gap: 7px;
+
+        font-size: 11px;
+    }
+
+    .detail-section-text,
+    .detail-benefit-list li {
+        font-size: 13px;
+    }
+
+    .detail-section {
+        margin-bottom: 25px;
+    }
+
+    .compatibility-item {
+        min-height: 100px;
+
+        padding: 17px;
+    }
+
+    .compatibility-info span {
+        font-size: 12px;
+    }
+
+    .compatibility-info strong {
+        font-size: 9px;
+    }
+}
+
+
+/* =========================================================
+   31 — ACCESSIBILITY / REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .detail-back-btn,
+    .detail-back-btn span,
+    .detail-nav-btn,
+    .detail-ingredient-image,
+    .detail-tags-clickable span,
+    .compatibility-item {
+        transition: none;
+    }
+
+    .detail-image-container:hover .detail-ingredient-image {
+        transform: none;
+    }
+
+    .detail-nav-btn:hover,
+    .detail-tags-clickable span:hover,
+    .compatibility-item:hover {
+        transform: none;
+    }
+}

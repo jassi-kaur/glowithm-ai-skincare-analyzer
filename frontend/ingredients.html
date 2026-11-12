@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Ingredient Intelligence | Glowithm</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Shared Glowithm Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Ingredient Intelligence Styles -->
+    <link rel="stylesheet" href="css/ingredients.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SHARED NAVBAR
+    ====================================================== -->
+
+    <div id="navbar"></div>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+
+
+<!-- =================================================
+     SECTION 1 — INGREDIENT INTELLIGENCE HERO
+================================================== -->
+
+<section
+            class="ingredient-hero"
+            id="ingredient-hero"
+        >
+
+            <!-- Background Image -->
+
+            <div class="hero-background">
+
+                <img
+                    src="assets/home-page/home-products.webp"
+                    alt="Skincare products arranged together"
+                >
+
+            </div>
+
+
+            <!-- Dark Image Overlay -->
+
+            <div class="hero-overlay"></div>
+
+
+            <!-- Hero Content -->
+
+            <div class="ingredient-hero-content">
+
+                <div class="hero-badge">
+
+                    <span>✦</span>
+
+                    Ingredient Intelligence
+
+                </div>
+
+
+                <h1>
+
+                    Know Your Ingredients.
+
+                    <span>
+                        Know Your Skin.
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Understand what your skincare ingredients
+                    actually do, how they work together,
+                    and whether they're right for your skin.
+
+                </p>
+
+
+                <!-- Search -->
+<!-- =========================================================
+     INGREDIENT HERO SEARCH
+========================================================= -->
+
+<div class="ingredient-hero-search">
+
+    <div class="ingredient-search-box">
+
+        <span class="ingredient-search-icon">
+            ⌕
+        </span>
+
+        <input
+            type="text"
+            id="ingredient-hero-input"
+                   aria-label="Search an ingredient"
+            placeholder="Search an ingredient..."
+            autocomplete="off"
+        >
+
+        <button
+            type="button"
+            id="ingredient-hero-search-btn"
+            class="ingredient-search-button"
+        >
+            Search
+        </button>
+
+    </div>
+
+
+    <!-- Search Suggestions -->
+    <div
+        class="ingredient-search-suggestions"
+        id="ingredient-search-suggestions"
+    ></div>
+
+
+    <!-- Search Message -->
+    <p
+        class="ingredient-search-message"
+        id="ingredient-search-message"
+    ></p>
+
+
+    <!-- Popular Ingredients -->
+    <div class="ingredient-popular">
+
+        <span>Popular:</span>
+
+        <button
+            type="button"
+            class="ingredient-popular-tag"
+            data-hero-ingredient="niacinamide"
+        >
+            Niacinamide
+        </button>
+
+        <button
+            type="button"
+            class="ingredient-popular-tag"
+            data-hero-ingredient="vitaminC"
+        >
+            Vitamin C
+        </button>
+
+        <button
+            type="button"
+            class="ingredient-popular-tag"
+            data-hero-ingredient="salicylicAcid"
+        >
+            Salicylic Acid
+        </button>
+
+        <button
+            type="button"
+            class="ingredient-popular-tag"
+            data-hero-ingredient="hyaluronicAcid"
+        >
+            Hyaluronic Acid
+        </button>
+
+        <button
+            type="button"
+            class="ingredient-popular-tag"
+            data-hero-ingredient="ceramides"
+        >
+            Ceramides
+        </button>
+
+    </div>
+
+</div>
+
+
+                <!-- Popular Ingredients -->
+
+
+            </div>
+
+</section>
+
+
+<!-- =================================================
+     SECTION 2 — EXPLORE INGREDIENTS
+=================================================== -->
+
+<section class="explore-ingredients" id="explore-ingredients">
+
+    <div class="explore-header">
+
+        <span class="section-label">
+            INGREDIENT CATEGORIES
+        </span>
+
+        <h2>
+            Explore Ingredients
+            <span>By What They Do</span>
+        </h2>
+
+        <p>
+            Discover the building blocks of skincare and understand
+            how different ingredients support your skin.
+        </p>
+
+    </div>
+
+
+    <div class="ingredient-bento">
+
+        <!-- HYDRATORS -->
+        <div class="ingredient-bento-card hydrators">
+
+            <div class="bento-top">
+                <span class="bento-number">01</span>
+                <span class="bento-icon">💧</span>
+            </div>
+
+            <div class="bento-content">
+
+                <h3>Hydrators</h3>
+
+                <p>
+                    Attract and retain moisture for soft,
+                    comfortable and hydrated skin.
+                </p>
+
+                <div class="bento-ingredients">
+                    <span>Hyaluronic Acid</span>
+                    <span>Glycerin</span>
+                    <span>Ceramides</span>
+                </div>
+
+            </div>
+
+            <span class="bento-arrow">↗</span>
+
+        </div>
+
+
+        <!-- EXFOLIANTS -->
+        <div class="ingredient-bento-card exfoliants">
+
+            <div class="bento-top">
+                <span class="bento-number">02</span>
+                <span class="bento-icon">✨</span>
+            </div>
+
+            <div class="bento-content">
+
+                <h3>Exfoliants</h3>
+
+                <p>
+                    Help remove dead skin cells and
+                    reveal smoother-looking skin.
+                </p>
+
+                <div class="bento-ingredients">
+                    <span>Salicylic Acid</span>
+                    <span>Glycolic Acid</span>
+                    <span>Lactic Acid</span>
+                </div>
+
+            </div>
+
+            <span class="bento-arrow">↗</span>
+
+        </div>
+
+
+        <!-- ANTIOXIDANTS -->
+        <div class="ingredient-bento-card antioxidants">
+
+            <div class="bento-top">
+                <span class="bento-number">03</span>
+                <span class="bento-icon">🛡️</span>
+            </div>
+
+            <div class="bento-content">
+
+                <h3>Antioxidants</h3>
+
+                <p>
+                    Help defend skin against environmental
+                    stress and support a brighter appearance.
+                </p>
+
+                <div class="bento-ingredients">
+                    <span>Vitamin C</span>
+                    <span>Vitamin E</span>
+                    <span>Green Tea</span>
+                </div>
+
+            </div>
+
+            <span class="bento-arrow">↗</span>
+
+        </div>
+
+
+        <!-- RETINOIDS -->
+        <div class="ingredient-bento-card retinoids">
+
+            <div class="bento-top">
+                <span class="bento-number">04</span>
+                <span class="bento-icon">🌙</span>
+            </div>
+
+            <div class="bento-content">
+
+                <h3>Retinoids</h3>
+
+                <p>
+                    Support skin renewal and help improve
+                    the appearance of fine lines and texture.
+                </p>
+
+                <div class="bento-ingredients">
+                    <span>Retinol</span>
+                    <span>Retinal</span>
+                    <span>Adapalene</span>
+                </div>
+
+            </div>
+
+            <span class="bento-arrow">↗</span>
+
+        </div>
+
+
+        <!-- BRIGHTENERS -->
+        <div class="ingredient-bento-card brighteners">
+
+            <div class="bento-top">
+                <span class="bento-number">05</span>
+                <span class="bento-icon">🌸</span>
+            </div>
+
+            <div class="bento-content">
+
+                <h3>Brighteners</h3>
+
+                <p>
+                    Support a more even-looking skin tone
+                    and reduce the appearance of dark spots.
+                </p>
+
+                <div class="bento-ingredients">
+                    <span>Niacinamide</span>
+                    <span>Alpha Arbutin</span>
+                    <span>Azelaic Acid</span>
+                </div>
+
+            </div>
+
+            <span class="bento-arrow">↗</span>
+
+        </div>
+
+
+        <!-- SOOTHING -->
+        <div class="ingredient-bento-card soothing">
+
+            <div class="bento-top">
+                <span class="bento-number">06</span>
+                <span class="bento-icon">🌿</span>
+            </div>
+
+            <div class="bento-content">
+
+                <h3>Soothing & Barrier</h3>
+
+                <p>
+                    Calm stressed skin and support
+                    a healthy skin barrier.
+                </p>
+
+                <div class="bento-ingredients">
+                    <span>Centella</span>
+                    <span>Panthenol</span>
+                    <span>Allantoin</span>
+                </div>
+
+            </div>
+
+            <span class="bento-arrow">↗</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =================================================
+    SECTION 3 — FEATURED INGREDIENTS
+==================================================== -->
+<section class="featured-ingredients" id="featured-ingredients">
+
+    <div class="featured-header">
+
+        <div class="featured-heading">
+
+            <span class="section-label">
+                INGREDIENT LIBRARY
+            </span>
+
+            <h2>
+                Meet Your
+                <span>Skincare Ingredients</span>
+            </h2>
+
+        </div>
+
+        <p>
+            Explore some of the most widely used ingredients
+            and discover what they can do for your skin.
+        </p>
+
+    </div>
+
+
+    <!-- CATEGORY FILTERS -->
+
+    <div class="ingredient-filters">
+
+        <button
+        class="ingredient-filter active"
+        type="button"
+        data-filter="all"
+    >
+         Popular
+    </button>
+
+    <button
+        class="ingredient-filter"
+        type="button"
+        data-filter="hydration"
+    >
+        Hydration
+    </button>
+
+    <button
+        class="ingredient-filter"
+        type="button"
+        data-filter="brightening"
+    >
+        Brightening
+    </button>
+
+    <button
+        class="ingredient-filter"
+        type="button"
+        data-filter="exfoliation"
+    >
+        Exfoliation
+    </button>
+
+    <button
+        class="ingredient-filter"
+        type="button"
+        data-filter="retinoids"
+    >
+        Retinoids
+    </button>
+
+    <button
+        class="ingredient-filter"
+        type="button"
+        data-filter="soothing"
+    >
+        Soothing & Barrier
+    </button>
+
+    <button
+        class="ingredient-filter"
+        type="button"
+        data-filter="antioxidants"
+    >
+        Antioxidants
+    </button>
+
+        <button
+        class="ingredient-filter"
+        type="button"
+        data-filter="acne-care"
+    >
+        Acne Care
+    </button>
+
+
+    </div>
+
+
+
+
+<!-- INGREDIENT GRID -->
+<div class="featured-ingredient-grid" id="ingredient-grid">
+
+    <!-- CARD 1 - NIACINAMIDE -->
+    <article class="ingredient-card" data-ingredient="niacinamide" data-categories="brightening barrier-care acne-care">
+        <div class="card-top">
+            <span class="card-number">01</span>
+            <span class="card-category">BRIGHTENING · BARRIER</span>
+        </div>
+
+        <div class="card-icon">
+            <span class="icon-letter">N</span>
+        </div>
+
+        <div class="card-body">
+            <h3>Niacinamide</h3>
+            <span class="card-subtitle">Vitamin B3</span>
+            <p>Supports a stronger skin barrier and helps improve the appearance of uneven skin tone.</p>
+            <div class="card-tags">
+                <span>Dark Spots</span>
+                <span>Oiliness</span>
+                <span>Barrier</span>
+            </div>
+        </div>
+
+        <button class="card-btn">
+            View Intelligence
+            <span>↗</span>
+        </button>
+    </article>
+
+    <!-- CARD 2 - RETINOL -->
+    <article class="ingredient-card" data-ingredient="retinol" data-categories="retinoids anti-aging">
+        <div class="card-top">
+            <span class="card-number">02</span>
+            <span class="card-category">RETINOID  · ANTI-AGING</span>
+        </div>
+
+        <div class="card-icon">
+            <span class="icon-letter">R</span>
+        </div>
+
+        <div class="card-body">
+            <h3>Retinol</h3>
+            <span class="card-subtitle">Vitamin A Derivative</span>
+            <p>Supports skin renewal and helps improve the appearance of fine lines and texture.</p>
+            <div class="card-tags">
+                <span>Fine Lines</span>
+                <span>Texture</span>
+                <span>Acne</span>
+            </div>
+        </div>
+
+        <button class="card-btn">
+            View Intelligence
+            <span>↗</span>
+        </button>
+    </article>
+
+    <!-- CARD 3 - VITAMIN C -->
+    <article class="ingredient-card" data-ingredient="vitaminC" data-categories="antioxidants brightening">
+        <div class="card-top">
+            <span class="card-number">03</span>
+            <span class="card-category">ANTIOXIDANT · BRIGHTENING</span>
+        </div>
+
+        <div class="card-icon">
+            <span class="icon-letter">C</span>
+        </div>
+
+        <div class="card-body">
+            <h3>Vitamin C</h3>
+            <span class="card-subtitle">L-Ascorbic Acid</span>
+            <p>Helps brighten the appearance of skin and supports antioxidant protection.</p>
+            <div class="card-tags">
+                <span>Dullness</span>
+                <span>Dark Spots</span>
+                <span>Uneven Tone</span>
+            </div>
+        </div>
+
+        <button class="card-btn">
+            View Intelligence
+            <span>↗</span>
+        </button>
+    </article>
+
+    <!-- CARD 4 - HYALURONIC ACID -->
+    <article class="ingredient-card" data-ingredient="hyaluronicAcid" data-categories="hydration soothing">
+        <div class="card-top">
+            <span class="card-number">04</span>
+            <span class="card-category">HYDRATION · SOOTHING</span>
+        </div>
+
+        <div class="card-icon">
+            <span class="icon-letter">H</span>
+        </div>
+
+        <div class="card-body">
+            <h3>Hyaluronic Acid</h3>
+            <span class="card-subtitle">Humectant</span>
+            <p>Helps attract and retain moisture for hydrated and plump-looking skin.</p>
+            <div class="card-tags">
+                <span>Dryness</span>
+                <span>Dehydration</span>
+                <span>Barrier</span>
+            </div>
+        </div>
+
+        <button class="card-btn">
+            View Intelligence
+            <span>↗</span>
+        </button>
+    </article>
+
+    <!-- CARD 5 - SALICYLIC ACID -->
+    <article class="ingredient-card" data-ingredient="salicylicAcid" data-categories="exfoliation acne-care">
+        <div class="card-top">
+            <span class="card-number">05</span>
+            <span class="card-category">EXFOLIANT · ACNE CARE</span>
+        </div>
+
+        <div class="card-icon">
+            <span class="icon-letter">S</span>
+        </div>
+
+        <div class="card-body">
+            <h3>Salicylic Acid</h3>
+            <span class="card-subtitle">Beta Hydroxy Acid</span>
+            <p>Helps exfoliate inside pores and supports clearer-looking skin.</p>
+            <div class="card-tags">
+                <span>Acne</span>
+                <span>Clogged Pores</span>
+                <span>Oiliness</span>
+            </div>
+        </div>
+
+        <button class="card-btn">
+            View Intelligence
+            <span>↗</span>
+        </button>
+    </article>
+
+    <!-- CARD 6 - CERAMIDES -->
+    <article class="ingredient-card" data-ingredient="ceramides" data-categories="soothing barrier-care hydration">
+        <div class="card-top">
+            <span class="card-number">06</span>
+            <span class="card-category">SOOTHING · BARRIER</span>
+        </div>
+
+        <div class="card-icon">
+            <span class="icon-letter">C</span>
+        </div>
+
+        <div class="card-body">
+            <h3>Ceramides</h3>
+            <span class="card-subtitle">Skin Lipids</span>
+            <p>Help support the skin barrier and reduce moisture loss for healthier-looking skin.</p>
+            <div class="card-tags">
+                <span>Dryness</span>
+                <span>Sensitivity</span>
+                <span>Barrier</span>
+            </div>
+        </div>
+
+        <button class="card-btn">
+            View Intelligence
+            <span>↗</span>
+        </button>
+    </article>
+
+</div>
+
+
+    <!-- LIBRARY LINK -->
+
+    <div class="ingredient-library-link">
+
+        <p>
+            Looking for something specific?
+        </p>
+        <a href="ingredient-library.html" class="library-link-btn">
+
+
+            Explore Full Ingredient Library
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SECTION 4 — INGREDIENT PAIRING INTELLIGENCE
+========================================================= -->
+<section class="pairing-section" id="ingredient-pairing">
+
+    <div class="pairing-container">
+
+        <!-- =================================================
+             SECTION HEADER
+        ================================================= -->
+
+        <div class="pairing-header">
+
+            <span class="pairing-eyebrow">
+                INGREDIENT PAIRING INTELLIGENCE
+            </span>
+
+            <h2>
+                Better Together.<br>
+                <span>Smarter Apart.</span>
+            </h2>
+
+            <p>
+                Skincare ingredients don't work in isolation.
+                Discover which ingredients complement each other,
+                which need caution, and which are better kept apart.
+            </p>
+
+        </div>
+
+        <!-- =================================================
+             PAIRING WORKSPACE
+        ================================================= -->
+
+        <div class="pairing-workspace">
+
+            <!-- INGREDIENT ONE -->
+            <div class="pairing-ingredient">
+
+                <span class="pairing-step">
+                    STEP 01
+                </span>
+
+                <button class="pairing-select" type="button" data-pair-slot="one">
+
+                    <div class="pairing-select-image">
+                        <img id="pair-image-one" src="assets/ingredients/niacinamide.webp" alt="Niacinamide">
+                    </div>
+
+                    <div class="pairing-select-info">
+                        <span class="pairing-select-category" id="pair-category-one">
+                            BRIGHTENING
+                        </span>
+                        <h3 id="pair-name-one">
+                            Niacinamide
+                        </h3>
+                        <span class="pairing-change">
+                            Change ingredient
+                        </span>
+                    </div>
+
+                    <span class="pairing-chevron">
+                        ↓
+                    </span>
+
+                </button>
+
+                <div class="pairing-dropdown" id="pair-dropdown-one">
+                    <!-- Options rendered by JavaScript -->
+                </div>
+
+            </div>
+
+            <!-- PLUS SIGN -->
+            <div class="pairing-plus">
+                <span>+</span>
+            </div>
+
+            <!-- INGREDIENT TWO -->
+            <div class="pairing-ingredient">
+
+                <span class="pairing-step">
+                    STEP 02
+                </span>
+
+                <button class="pairing-select" type="button" data-pair-slot="two">
+
+                    <div class="pairing-select-image">
+                        <img id="pair-image-two" src="assets/ingredients/hyaluronic-acid.webp" alt="Hyaluronic Acid">
+                    </div>
+
+                    <div class="pairing-select-info">
+                        <span class="pairing-select-category" id="pair-category-two">
+                            HYDRATION
+                        </span>
+                        <h3 id="pair-name-two">
+                            Hyaluronic Acid
+                        </h3>
+                        <span class="pairing-change">
+                            Change ingredient
+                        </span>
+                    </div>
+
+                    <span class="pairing-chevron">
+                        ↓
+                    </span>
+
+                </button>
+
+                <div class="pairing-dropdown" id="pair-dropdown-two">
+                    <!-- Options rendered by JavaScript -->
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =================================================
+             PAIRING RESULT
+        ================================================= -->
+
+        <div class="pairing-result" data-status="great">
+
+            <div class="pairing-result-top">
+
+                <div class="pairing-status">
+                    <span class="pairing-status-icon">✓</span>
+                    <div>
+                        <span class="pairing-status-label">COMPATIBILITY</span>
+                        <h3>Great Pair</h3>
+                    </div>
+                </div>
+
+                <span class="pairing-result-score">01</span>
+
+            </div>
+
+            <div class="pairing-result-body">
+                <p>
+                    Niacinamide and Hyaluronic Acid work well together.
+                    Niacinamide supports the skin barrier while Hyaluronic Acid
+                    helps attract and retain moisture.
+                </p>
+            </div>
+
+            <div class="pairing-result-tags">
+                <span>Barrier Support</span>
+                <span>Hydration</span>
+                <span>Skin Comfort</span>
+            </div>
+
+        </div>
+
+        <!-- =================================================
+             POPULAR PAIRS
+        ================================================= -->
+
+        <div class="pairing-examples-header">
+
+            <div>
+                <span class="pairing-eyebrow">QUICK LOOK</span>
+                <h3>Popular ingredient pairs</h3>
+            </div>
+
+            <span class="pairing-example-note">
+                Explore common combinations
+            </span>
+
+        </div>
+
+        <div class="pairing-examples">
+
+            <!-- PAIR 1: Niacinamide + Hyaluronic Acid -->
+            <button class="pairing-example-card active" type="button"
+                    data-pair-one="niacinamide"
+                    data-pair-two="hyaluronicAcid">
+
+                <div class="pairing-mini-images">
+                    <img src="assets/ingredients/niacinamide.webp" alt="Niacinamide">
+                    <span>+</span>
+                    <img src="assets/ingredients/hyaluronic-acid.webp" alt="Hyaluronic Acid">
+                </div>
+
+                <div class="pairing-example-info">
+                    <span>Niacinamide + Hyaluronic Acid</span>
+                    <small>Great Pair</small>
+                </div>
+
+                <span class="pairing-example-arrow">→</span>
+
+            </button>
+
+            <!-- PAIR 2: Vitamin C + Niacinamide -->
+            <button class="pairing-example-card" type="button"
+                    data-pair-one="vitaminC"
+                    data-pair-two="niacinamide">
+
+                <div class="pairing-mini-images">
+                    <img src="assets/ingredients/vitamin-c.webp" alt="Vitamin C">
+                    <span>+</span>
+                    <img src="assets/ingredients/niacinamide.webp" alt="Niacinamide">
+                </div>
+
+                <div class="pairing-example-info">
+                    <span>Vitamin C + Niacinamide</span>
+                    <small>Generally Compatible</small>
+                </div>
+
+                <span class="pairing-example-arrow">→</span>
+
+            </button>
+
+            <!-- PAIR 3: Retinol + Salicylic Acid -->
+            <button class="pairing-example-card" type="button"
+                    data-pair-one="retinol"
+                    data-pair-two="salicylicAcid">
+
+                <div class="pairing-mini-images">
+                    <img src="assets/ingredients/retinol.webp" alt="Retinol">
+                    <span>+</span>
+                    <img src="assets/ingredients/salicylic-acid.webp" alt="Salicylic Acid">
+                </div>
+
+                <div class="pairing-example-info">
+                    <span>Retinol + Salicylic Acid</span>
+                    <small>Use With Caution</small>
+                </div>
+
+                <span class="pairing-example-arrow">→</span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =========================================================
+     SECTION 5 — INGREDIENT INTELLIGENCE CTA
+========================================================= -->
+
+<section class="ingredient-cta" id="ingredient-cta">
+
+    <div class="ingredient-cta-container">
+
+
+        <!-- =================================================
+             CTA VISUAL
+        ================================================= -->
+
+        <div class="ingredient-cta-visual">
+
+            <div class="ingredient-cta-glow"></div>
+
+            <img
+                src="assets/ingredients/ingredient-placeholder.webp"
+                alt="Skincare products and ingredients"
+            >
+
+            <div class="ingredient-cta-floating-card">
+
+                <span class="cta-floating-label">
+                    GLOWITHM INTELLIGENCE
+                </span>
+
+                <span class="cta-floating-text">
+                    Your skin. Your ingredients.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             CTA CONTENT
+        ================================================= -->
+
+        <div class="ingredient-cta-content">
+
+            <span class="ingredient-cta-eyebrow">
+                READY TO GO DEEPER?
+            </span>
+
+            <h2>
+                Know your ingredients.
+                <span>Understand your skin.</span>
+            </h2>
+
+            <p>
+                Discover which ingredients make sense for your
+                skin type, concerns, and current routine.
+                Let Glowithm turn ingredient knowledge into
+                a routine made for you.
+            </p>
+
+            <a
+                href="analyzer.html"
+                class="ingredient-cta-button"
+            >
+                <span>
+                    Analyze My Skin
+                </span>
+
+                <span class="ingredient-cta-arrow">
+                    →
+                </span>
+
+            </a>
+
+            <span class="ingredient-cta-note">
+                Personalized analysis · Ingredient-aware routine
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    </main>
+
+
+    <!-- =====================================================
+         SHARED FOOTER
+    ====================================================== -->
+
+    <div id="footer"></div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/components.js"></script>
+    <script src="js/pairing-resolver.js"></script>
+    <script src="js/ingredients.js"></script>
+
+</body>
+
+</html>

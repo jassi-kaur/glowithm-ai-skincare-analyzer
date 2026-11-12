@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ingredient Detail | Glowithm</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Shared Glowithm Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Ingredient Detail Styles -->
+    <link rel="stylesheet" href="css/ingredient-detail.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SHARED NAVBAR
+    ====================================================== -->
+
+    <div id="navbar"></div>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+
+        <!-- =================================================
+             INGREDIENT DETAIL
+        ================================================== -->
+
+        <section class="ingredient-detail-page" id="ingredient-detail-page">
+
+            <div class="ingredient-detail-container">
+
+                <!-- =============================================
+                     BACK BUTTON
+                ============================================== -->
+
+                <div class="detail-back">
+                    <a href="ingredient-library.html" class="detail-back-btn">
+                        <span>←</span>
+                        Back to Library
+                    </a>
+                </div>
+
+
+                <!-- =============================================
+                     INGREDIENT PROFILE
+                ============================================== -->
+
+                <div class="ingredient-profile-wrapper">
+
+                    <!-- LEFT — VISUAL -->
+                    <div class="ingredient-profile-visual">
+
+                        <div class="detail-image-container">
+                            <img
+                                id="detail-ingredient-image"
+                                src="assets/ingredients/niacinamide.webp"
+                                alt="Niacinamide"
+                                class="detail-ingredient-image"
+                            >
+                        </div>
+
+                        <div class="detail-visual-tags">
+                            <span class="detail-visual-tag" id="detail-visual-category">BRIGHTENING</span>
+                            <span class="detail-visual-tag detail-visual-tag-secondary" id="detail-visual-support">BARRIER SUPPORT</span>
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <div class="detail-navigation">
+                            <button class="detail-nav-btn" id="detail-prev" type="button">
+                                ←
+                            </button>
+                            <span class="detail-counter" id="detail-counter">01 / 14</span>
+                            <button class="detail-nav-btn" id="detail-next" type="button">
+                                →
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT — INFORMATION -->
+                    <div class="ingredient-profile-info">
+
+                        <!-- Category -->
+                        <p class="detail-category" id="detail-category">
+                            BRIGHTENING · BARRIER SUPPORT
+                        </p>
+
+                        <!-- Name -->
+                        <h1 class="detail-name" id="detail-name">
+                            Niacinamide
+                        </h1>
+
+                        <!-- Subtitle -->
+                        <p class="detail-subtitle" id="detail-subtitle">
+                            Vitamin B3
+                        </p>
+
+                        <!-- Meta Tags -->
+                        <div class="detail-meta" id="detail-meta">
+                            <span>Water-soluble</span>
+                            <span class="meta-dot">•</span>
+                            <span>Beginner-friendly</span>
+                            <span class="meta-dot">•</span>
+                            <span>Daily use</span>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="detail-divider"></div>
+
+                        <!-- What It Is -->
+                        <div class="detail-section">
+                            <span class="detail-section-label">WHAT IT IS</span>
+                            <p class="detail-section-text" id="detail-what-it-is">
+                                Niacinamide is a form of vitamin B3 commonly used in skincare to support the skin barrier, balance excess oil and improve the appearance of uneven skin tone.
+                            </p>
+                        </div>
+
+                        <!-- What It Does -->
+                        <div class="detail-section">
+                            <span class="detail-section-label">WHAT IT DOES</span>
+                            <ul class="detail-benefit-list" id="detail-what-it-does">
+                                <li>Supports the skin barrier</li>
+                                <li>Helps control excess oil</li>
+                                <li>Improves the appearance of uneven skin tone</li>
+                            </ul>
+                        </div>
+
+                        <!-- How It Works -->
+                        <div class="detail-section">
+                            <span class="detail-section-label">HOW IT WORKS</span>
+                            <p class="detail-section-text" id="detail-how-it-works">
+                                Niacinamide supports several functions of the skin barrier and can help regulate excess sebum while supporting a more even-looking complexion.
+                            </p>
+                        </div>
+
+                        <!-- Best For + Skin Types Grid -->
+                        <div class="detail-grid-2col">
+
+                            <div class="detail-section">
+                                <span class="detail-section-label">BEST FOR</span>
+                                <div class="detail-tags" id="detail-best-for">
+                                    <span>Acne-prone skin</span>
+                                    <span>Uneven skin tone</span>
+                                    <span>Visible dark spots</span>
+                                    <span>Weak skin barrier</span>
+                                </div>
+                            </div>
+
+                            <div class="detail-section">
+                                <span class="detail-section-label">SKIN TYPES</span>
+                                <div class="detail-tags" id="detail-skin-types">
+                                    <span>Oily</span>
+                                    <span>Combination</span>
+                                    <span>Normal</span>
+                                    <span>Dry</span>
+                                    <span>Sensitive</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- How to Use + Routine -->
+                        <div class="detail-grid-2col">
+
+                            <div class="detail-section">
+                                <span class="detail-section-label">HOW TO USE</span>
+                                <p class="detail-section-text" id="detail-usage">
+                                    Can generally be used once or twice daily after cleansing and before moisturizer.
+                                </p>
+                            </div>
+
+                            <div class="detail-section">
+                                <span class="detail-section-label">ROUTINE</span>
+                                <div class="detail-routine-badges" id="detail-routine">
+                                    <span class="routine-badge">Morning</span>
+                                    <span class="routine-badge">Night</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Pair With + Use With Caution -->
+                        <div class="detail-grid-2col">
+
+                            <div class="detail-section">
+                                <span class="detail-section-label">PAIR WITH</span>
+                                <div class="detail-tags detail-tags-clickable" id="detail-pairings">
+                                    <span>Hyaluronic Acid</span>
+                                    <span>Ceramides</span>
+                                    <span>Vitamin C</span>
+                                </div>
+                            </div>
+
+                            <div class="detail-section">
+                                <span class="detail-section-label">USE WITH CAUTION</span>
+                                <div class="detail-tags detail-tags-caution" id="detail-avoid-with">
+                                    <span>No major conflicts listed</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Notes -->
+                        <div class="detail-section">
+                            <span class="detail-section-label">NOTES</span>
+                            <p class="detail-section-text detail-notes" id="detail-notes">
+                                A versatile ingredient that fits into many skincare routines and is generally well tolerated.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =============================================
+                     SKIN COMPATIBILITY
+                ============================================== -->
+
+                <div class="detail-compatibility">
+
+                    <div class="compatibility-heading">
+                        <span class="detail-section-label">SKIN COMPATIBILITY</span>
+                        <p>How well this ingredient fits common skin concerns</p>
+                    </div>
+
+                    <div class="compatibility-grid" id="detail-compatibility">
+
+                        <!-- Acne -->
+                        <div class="compatibility-item">
+                            <div class="compatibility-info">
+                                <span>Acne</span>
+                                <strong>Excellent</strong>
+                            </div>
+                            <div class="compatibility-dots">
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                            </div>
+                        </div>
+
+                        <!-- Pigmentation -->
+                        <div class="compatibility-item">
+                            <div class="compatibility-info">
+                                <span>Pigmentation</span>
+                                <strong>Excellent</strong>
+                            </div>
+                            <div class="compatibility-dots">
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                            </div>
+                        </div>
+
+                        <!-- Dark Spots -->
+                        <div class="compatibility-item">
+                            <div class="compatibility-info">
+                                <span>Dark Spots</span>
+                                <strong>Excellent</strong>
+                            </div>
+                            <div class="compatibility-dots">
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                            </div>
+                        </div>
+
+                        <!-- Dryness -->
+                        <div class="compatibility-item">
+                            <div class="compatibility-info">
+                                <span>Dryness</span>
+                                <strong>Good</strong>
+                            </div>
+                            <div class="compatibility-dots">
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                            </div>
+                        </div>
+
+                        <!-- Redness -->
+                        <div class="compatibility-item">
+                            <div class="compatibility-info">
+                                <span>Redness</span>
+                                <strong>Good</strong>
+                            </div>
+                            <div class="compatibility-dots">
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="empty"></span>
+                            </div>
+                        </div>
+
+                        <!-- Fine Lines & Aging -->
+                        <div class="compatibility-item">
+                            <div class="compatibility-info">
+                                <span>Fine Lines &amp; Aging</span>
+                                <strong>Good</strong>
+                            </div>
+                            <div class="compatibility-dots">
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="empty"></span>
+                                <span class="empty"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         SHARED FOOTER
+    ====================================================== -->
+
+    <div id="footer"></div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/components.js"></script>
+    <script src="js/ingredient-detail.js"></script>
+
+
+</body>
+
+</html>

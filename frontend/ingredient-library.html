@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Full Ingredient Library | Glowithm</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Shared Glowithm Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Ingredient Library Styles -->
+    <link rel="stylesheet" href="css/ingredient-library.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SHARED NAVBAR
+    ====================================================== -->
+
+    <div id="navbar"></div>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+
+        <!-- =================================================
+             LIBRARY HERO
+        ================================================== -->
+
+        <section class="library-hero">
+
+            <div class="library-hero-content">
+
+                <div class="library-hero-badge">
+                    <span>✦</span>
+                    Full Ingredient Library
+                </div>
+
+                <h1>
+                    Explore All
+                    <span>14 Skincare Ingredients</span>
+                </h1>
+
+                <p>
+                    Discover every ingredient in the Glowithm database.
+                    Learn what they do, how they work, and which ones
+                    are right for your skin.
+                </p>
+
+                <!-- Search -->
+                <div class="library-search-box">
+
+                    <span class="library-search-icon">
+                        ⌕
+                    </span>
+
+                    <input
+                        type="text"
+                        id="library-search-input"
+                   aria-label="Search all ingredients"
+                        placeholder="Search all ingredients..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="library-search-btn"
+                        class="library-search-button"
+                    >
+                        Search
+                    </button>
+
+                </div>
+
+                <!-- Search Message -->
+                <p class="library-search-message" id="library-search-message"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             LIBRARY FILTERS
+        ================================================== -->
+
+        <section class="library-filters-section">
+
+            <div class="library-filters-container">
+
+                <div class="library-filters-header">
+
+                    <span class="library-results-count" id="library-results-count">
+                        Showing 14 ingredients
+                    </span>
+
+                    <div class="library-filters-wrapper">
+
+                        <button
+                            class="library-filter active"
+                            type="button"
+                            data-filter="all"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            class="library-filter"
+                            type="button"
+                            data-filter="hydration"
+                        >
+                            💧 Hydration
+                        </button>
+
+                        <button
+                            class="library-filter"
+                            type="button"
+                            data-filter="brightening"
+                        >
+                            ✨ Brightening
+                        </button>
+
+                        <button
+                            class="library-filter"
+                            type="button"
+                            data-filter="exfoliation"
+                        >
+                            🧪 Exfoliation
+                        </button>
+
+                        <button
+                            class="library-filter"
+                            type="button"
+                            data-filter="retinoids"
+                        >
+                            🔬 Retinoids
+                        </button>
+
+                        <button
+                            class="library-filter"
+                            type="button"
+                            data-filter="soothing"
+                        >
+                            🛡️ Soothing & Barrier
+                        </button>
+
+                        <button
+                            class="library-filter"
+                            type="button"
+                            data-filter="antioxidants"
+                        >
+                            🌿 Antioxidants
+                        </button>
+
+                        <button
+                            class="library-filter"
+                            type="button"
+                            data-filter="acne-care"
+                        >
+                            🧴 Acne Care
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             LIBRARY GRID — ALL 14 INGREDIENTS
+        ================================================== -->
+
+        <section class="library-grid-section">
+
+            <div class="library-grid-container">
+
+                <div class="library-ingredient-grid" id="library-ingredient-grid">
+
+                    <!-- Cards will be rendered by JavaScript -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             LIBRARY CTA
+        ================================================== -->
+
+        <section class="library-cta">
+
+            <div class="library-cta-container">
+
+                <div class="library-cta-content">
+
+                    <span class="library-cta-eyebrow">
+                        READY TO DIVE DEEPER?
+                    </span>
+
+                    <h2>
+                        Know your ingredients.
+                        <span>Understand your skin.</span>
+                    </h2>
+
+                    <p>
+                        Discover which ingredients make sense for your
+                        skin type, concerns, and current routine.
+                        Let Glowithm turn ingredient knowledge into
+                        a routine made for you.
+                    </p>
+
+                    <a href="analyzer.html" class="library-cta-button">
+                        <span>Analyze My Skin</span>
+                        <span class="library-cta-arrow">→</span>
+                    </a>
+
+                    <span class="library-cta-note">
+                        Personalized analysis · Ingredient-aware routine
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         SHARED FOOTER
+    ====================================================== -->
+
+    <div id="footer"></div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/components.js"></script>
+    <script src="js/ingredient-library.js"></script>
+
+
+</body>
+
+</html>

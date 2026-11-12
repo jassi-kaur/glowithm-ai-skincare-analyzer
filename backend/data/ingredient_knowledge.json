@@ -1,0 +1,559 @@
+{
+  "schema_version": "1.0",
+  "source_policy": "Store evidence-informed summaries with traceable source URLs. Do not treat cosmetic ingredient information as an individualized diagnosis or treatment plan.",
+  "ingredients": [
+    {
+      "canonical_name": "retinol",
+      "category": "retinoid",
+      "potential_benefits": [
+        "May help improve uneven skin tone, skin texture, and the appearance of fine lines.",
+        "Retinoids are also used in acne care, although suitability depends on the specific ingredient and product."
+      ],
+      "usage_guidance": [
+        "Introduce cautiously because irritation and dryness can occur.",
+        "Use sun protection during the day."
+      ],
+      "precautions": [
+        "Avoid retinoids during pregnancy.",
+        "People with significant redness or inflammation should avoid retinoids and consult a dermatologist about alternatives."
+      ],
+      "sources": [
+        {
+          "title": "Retinoid or retinol?",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging/retinoid-retinol/"
+        }
+      ]
+    },
+    {
+      "canonical_name": "salicylic acid",
+      "category": "beta_hydroxy_acid",
+      "potential_benefits": [
+        "Helps exfoliate skin and unclog pores.",
+        "Can help treat blackheads and whiteheads."
+      ],
+      "usage_guidance": [
+        "Choose a product and frequency appropriate for your skin and follow its directions."
+      ],
+      "precautions": [
+        "Dryness or irritation may occur.",
+        "Not every concentration or formulation suits every user.",
+        "Check with a doctor before using during pregnancy or breastfeeding."
+      ],
+      "sources": [
+        {
+          "title": "Acne: Diagnosis and treatment",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/diseases/acne/diy/adult-acne-treatment"
+        }
+      ]
+    },
+    {
+      "canonical_name": "azelaic acid",
+      "category": "azelaic",
+      "potential_benefits": [
+        "Can help treat acne.",
+        "May help reduce dark spots left after acne."
+      ],
+      "usage_guidance": [
+        "Use according to the specific product directions or a healthcare professional's advice."
+      ],
+      "precautions": [
+        "Individual suitability and tolerability vary."
+      ],
+      "sources": [
+        {
+          "title": "Acne: Diagnosis and treatment",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/diseases/acne/diy/adult-acne-treatment"
+        }
+      ]
+    },
+    {
+      "canonical_name": "niacinamide",
+      "category": "vitamin_b3",
+      "potential_benefits": [
+        "May support the skin barrier and help skin retain moisture.",
+        "May help calm redness and improve the appearance of uneven skin tone.",
+        "May help regulate oil and reduce the appearance of pores."
+      ],
+      "usage_guidance": [
+        "Start with a lower concentration if you have sensitive skin.",
+        "Follow the directions for the specific product."
+      ],
+      "precautions": [
+        "Usually well tolerated, but itching, redness, burning, or allergic reactions can occur.",
+        "Benefits vary with the formulation and individual skin."
+      ],
+      "sources": [
+        {
+          "title": "Niacinamide: What It Is and Skin Benefits",
+          "organization": "Cleveland Clinic",
+          "url": "https://health.clevelandclinic.org/niacinamide"
+        }
+      ]
+    },
+    {
+      "canonical_name": "hyaluronic acid",
+      "category": "humectant",
+      "potential_benefits": [
+        "Attracts and binds water, helping skin retain moisture.",
+        "May improve the appearance of dehydrated skin and help it feel smoother and more supple.",
+        "Hydration may soften the appearance of fine lines."
+      ],
+      "usage_guidance": [
+        "Applying to damp skin and following with moisturizer may help support hydration.",
+        "Follow the directions for the specific product."
+      ],
+      "precautions": [
+        "Topical products are generally well tolerated.",
+        "Results vary with the product formulation and other ingredients."
+      ],
+      "sources": [
+        {
+          "title": "Hyaluronic acid for skin: Benefits, how to use it, and side effects",
+          "organization": "Harvard Health Publishing",
+          "url": "https://www.health.harvard.edu/medications-and-treatments/hyaluronic-acid-for-skin-benefits-how-to-use-it-and-side-effects"
+        },
+        {
+          "title": "How to pick the right moisturizer for your skin",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/skin-care-basics/dry/pick-moisturizer"
+        }
+      ]
+    },
+    {
+      "canonical_name": "benzoyl peroxide",
+      "category": "acne_treatment",
+      "potential_benefits": [
+        "Helps treat acne by reducing acne-causing bacteria.",
+        "May help reduce inflammatory acne lesions."
+      ],
+      "usage_guidance": [
+        "Start cautiously and follow the product directions.",
+        "A lower concentration may be appropriate when first using it."
+      ],
+      "precautions": [
+        "Dryness, redness, peeling, or irritation can occur.",
+        "Can bleach fabrics such as towels and pillowcases.",
+        "Avoid contact with eyes and follow product warnings."
+      ],
+      "sources": [
+        {
+          "title": "Adult acne: Treatment",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/diseases/acne/diy/adult-acne-treatment"
+        }
+      ]
+    },
+    {
+      "canonical_name": "ceramides",
+      "category": "barrier_repair",
+      "potential_benefits": [
+        "Help support the skin barrier.",
+        "Help reduce moisture loss and maintain skin hydration."
+      ],
+      "usage_guidance": [
+        "Can be used in moisturizers and other barrier-supporting skincare products.",
+        "Choose a formulation appropriate for your skin and follow its directions."
+      ],
+      "precautions": [
+        "Individual products may contain other ingredients that cause irritation or sensitivity.",
+        "Benefits depend on the overall product formulation."
+      ],
+      "sources": [
+        {
+          "title": "How to pick the right moisturizer for your skin",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/skin-care-basics/dry/pick-moisturizer"
+        }
+      ]
+    },
+    {
+      "canonical_name": "vitamin c",
+      "category": "antioxidant",
+      "potential_benefits": [
+        "Provides antioxidant activity that helps protect skin from oxidative stress.",
+        "May help improve the appearance of uneven skin tone and dark spots."
+      ],
+      "usage_guidance": [
+        "Follow the product's directions and introduce it gradually if your skin is sensitive.",
+        "Use sunscreen during the day as part of a sun-protection routine."
+      ],
+      "precautions": [
+        "May cause dryness, itching, redness, or irritation in some people.",
+        "Product stability can vary with formulation, light exposure, and storage conditions.",
+        "Benefits and tolerability vary by product and individual skin."
+      ],
+      "sources": [
+        {
+          "title": "Vitamin C Serum: Benefits, How to Apply",
+          "organization": "Cleveland Clinic",
+          "url": "https://health.clevelandclinic.org/vitamin-c-serum"
+        }
+      ]
+    },
+    {
+      "canonical_name": "glycerin",
+      "category": "humectant",
+      "potential_benefits": [
+        "Attracts and helps retain water in the outer skin layer.",
+        "Can help soften and hydrate skin."
+      ],
+      "usage_guidance": [
+        "Commonly used in moisturizers and cleansers.",
+        "May be combined with emollients or occlusive ingredients."
+      ],
+      "precautions": [
+        "Tolerance depends on the complete formulation and individual skin."
+      ],
+      "sources": [
+        {
+          "title": "Emollients and moisturisers",
+          "url": "https://dermnetnz.org/topics/emollients-and-moisturisers",
+          "organization": "DermNet"
+        }
+      ]
+    },
+    {
+      "canonical_name": "squalane",
+      "category": "emollient",
+      "potential_benefits": [
+        "Helps soften skin and reduce moisture loss.",
+        "Can support a smoother-feeling skin surface."
+      ],
+      "usage_guidance": [
+        "Often used in moisturizers and facial oils.",
+        "Follow the product's directions."
+      ],
+      "precautions": [
+        "The complete formulation may affect suitability for acne-prone or sensitive skin."
+      ],
+      "sources": [
+        {
+          "title": "Moisturizers: The Slippery Road",
+          "url": "https://doi.org/10.4103/0019-5154.182427",
+          "organization": "Indian Journal of Dermatology"
+        }
+      ]
+    },
+    {
+      "canonical_name": "vitamin e",
+      "category": "antioxidant",
+      "potential_benefits": [
+        "Has antioxidant properties.",
+        "May help condition and moisturize skin in suitable formulations."
+      ],
+      "usage_guidance": [
+        "Use according to product directions."
+      ],
+      "precautions": [
+        "Topical products may cause irritation or contact allergy in some people.",
+        "Evidence for a particular benefit depends on the formulation."
+      ],
+      "sources": [
+        {
+          "title": "Patch Testing with Tocopherol and Tocopherol Acetate: The North American Contact Dermatitis Group Experience, 2001 to 2016",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34238818/",
+          "organization": "Dermatitis"
+        },
+        {
+          "title": "Vitamin E for Skin Health",
+          "organization": "Cleveland Clinic",
+          "url": "https://health.clevelandclinic.org/vitamin-e-for-skin-health"
+        }
+      ]
+    },
+    {
+      "canonical_name": "peptide",
+      "category": "skin_conditioning",
+      "potential_benefits": [
+        "Some peptides are used in skincare products marketed to improve the appearance of skin; evidence depends on the specific peptide and formulation."
+      ],
+      "usage_guidance": [
+        "Check the specific peptide and the product's intended use."
+      ],
+      "precautions": [
+        "Peptides are a broad group; effects cannot be assumed to be identical across all peptides."
+      ],
+      "sources": [
+        {
+          "title": "Oral and topical peptides for skin aging: systematic review and meta-analysis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13037056/",
+          "organization": "PubMed Central (PMC)"
+        }
+      ]
+    },
+    {
+      "canonical_name": "copper peptide",
+      "category": "skin_conditioning",
+      "potential_benefits": [
+        "Used in some skincare formulations aimed at improving the appearance of skin texture."
+      ],
+      "usage_guidance": [
+        "Follow the product's directions and introduce new products cautiously."
+      ],
+      "precautions": [
+        "Results and tolerability depend on the formulation, and collagen-related effects are not guaranteed."
+      ],
+      "sources": [
+        {
+          "title": "A Systematic Review of the Mechanisms and Therapeutic Applications of GHK-Cu (Glycyl-L-Histidyl-L-Lysine-Copper Complex) in Topical Microneedle Delivery: A Case for Expanded Clinical Trials",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13604022/",
+          "organization": "Archives of Internal Medicine Research"
+        }
+      ],
+      "llm_guidance": [
+        "Do not promise collagen regeneration as a guaranteed outcome."
+      ]
+    },
+    {
+      "canonical_name": "glycolic acid",
+      "category": "alpha_hydroxy_acid",
+      "potential_benefits": [
+        "Can exfoliate the skin surface.",
+        "May improve the appearance of uneven tone and texture."
+      ],
+      "usage_guidance": [
+        "Introduce gradually and follow product directions.",
+        "Use sun protection as part of daytime skincare."
+      ],
+      "precautions": [
+        "Can cause irritation, especially with frequent use or other exfoliating products.",
+        "Sensitive skin may not tolerate it.",
+        "Check with a doctor before using during pregnancy or breastfeeding."
+      ],
+      "sources": [
+        {
+          "title": "How to safely exfoliate at home",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/safely-exfoliate-at-home"
+        }
+      ]
+    },
+    {
+      "canonical_name": "lactic acid",
+      "category": "alpha_hydroxy_acid",
+      "potential_benefits": [
+        "Can exfoliate the skin surface.",
+        "May improve the appearance of skin texture."
+      ],
+      "usage_guidance": [
+        "Start cautiously and follow product directions.",
+        "Use sun protection during the day."
+      ],
+      "precautions": [
+        "May cause stinging, dryness, or irritation.",
+        "Avoid combining multiple strong exfoliants until tolerance is established.",
+        "Check with a doctor before using during pregnancy or breastfeeding."
+      ],
+      "sources": [
+        {
+          "title": "How to safely exfoliate at home",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/safely-exfoliate-at-home"
+        }
+      ]
+    },
+    {
+      "canonical_name": "aha",
+      "category": "alpha_hydroxy_acid",
+      "potential_benefits": [
+        "Alpha hydroxy acids are a group of exfoliating ingredients that can help improve the appearance of skin texture."
+      ],
+      "usage_guidance": [
+        "Check which specific acid and what concentration your product contains before using it."
+      ],
+      "precautions": [
+        "AHA describes a category, not one ingredient; safety and tolerability vary by acid, concentration, and formulation.",
+        "Check with a doctor before using during pregnancy or breastfeeding."
+      ],
+      "sources": [
+        {
+          "title": "How to safely exfoliate at home",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/safely-exfoliate-at-home"
+        }
+      ],
+      "llm_guidance": [
+        "Identify the specific acid and concentration before recommending use."
+      ]
+    },
+    {
+      "canonical_name": "hydroquinone",
+      "category": "pigmentation_treatment",
+      "potential_benefits": [
+        "Can help lighten certain forms of hyperpigmentation when appropriately prescribed or used under professional guidance."
+      ],
+      "usage_guidance": [
+        "Seek advice from a qualified healthcare professional about whether it is appropriate and how long to use it."
+      ],
+      "precautions": [
+        "May cause irritation or unwanted skin changes.",
+        "Prolonged or unsupervised use is not recommended."
+      ],
+      "sources": [
+        {
+          "title": "How to fade dark spots in darker skin tones",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+        }
+      ],
+      "llm_guidance": [
+        "Do not recommend prolonged or unsupervised use."
+      ]
+    },
+    {
+      "canonical_name": "zinc oxide",
+      "category": "mineral_sunscreen_filter",
+      "potential_benefits": [
+        "Used as an active ingredient in mineral sunscreens to help protect against ultraviolet radiation."
+      ],
+      "usage_guidance": [
+        "Choose a tested, broad-spectrum sunscreen with SPF 30 or higher and follow its application directions."
+      ],
+      "precautions": [
+        "Protection depends on the complete sunscreen formulation and correct application; the ingredient name alone does not establish an SPF."
+      ],
+      "sources": [
+        {
+          "title": "How to decode a sunscreen label",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/understand-sunscreen-labels"
+        }
+      ]
+    },
+    {
+      "canonical_name": "titanium dioxide",
+      "category": "mineral_sunscreen_filter",
+      "potential_benefits": [
+        "Used as an active ingredient in mineral sunscreens to help protect against ultraviolet radiation."
+      ],
+      "usage_guidance": [
+        "Choose a tested, broad-spectrum sunscreen with SPF 30 or higher and follow its application directions."
+      ],
+      "precautions": [
+        "Protection depends on the complete sunscreen formulation and correct application; the ingredient name alone does not establish an SPF."
+      ],
+      "sources": [
+        {
+          "title": "How to decode a sunscreen label",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/understand-sunscreen-labels"
+        }
+      ]
+    },
+    {
+      "canonical_name": "avobenzone",
+      "category": "chemical_sunscreen_filter",
+      "potential_benefits": [
+        "Used as a sunscreen active ingredient to provide UVA protection in suitable formulations."
+      ],
+      "usage_guidance": [
+        "Use it as part of a tested sunscreen product with broad-spectrum protection and SPF 30 or higher."
+      ],
+      "precautions": [
+        "The ingredient alone does not establish the finished product's protection level or water resistance.",
+        "Some individuals may experience irritation."
+      ],
+      "sources": [
+        {
+          "title": "How to decode a sunscreen label",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/understand-sunscreen-labels"
+        }
+      ]
+    },
+    {
+      "canonical_name": "adapalene",
+      "category": "retinoid",
+      "potential_benefits": [
+        "A topical retinoid used to treat acne.",
+        "Helps address clogged pores and acne lesions."
+      ],
+      "usage_guidance": [
+        "Follow the prescribing healthcare professional's instructions and the product label."
+      ],
+      "precautions": [
+        "May cause dryness, redness, peeling, or irritation.",
+        "Avoid during pregnancy. Consult a healthcare professional about appropriate alternatives if pregnant, planning pregnancy, or breastfeeding.",
+        "Do not combine with other strong actives without checking tolerability and professional guidance."
+      ],
+      "sources": [
+        {
+          "title": "Acne: Diagnosis and treatment",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/diseases/acne/derm-treat/treat/"
+        }
+      ]
+    },
+    {
+      "canonical_name": "retinaldehyde",
+      "category": "retinoid",
+      "potential_benefits": [
+        "A vitamin A derivative used in some skincare products for the appearance of skin texture and signs of aging."
+      ],
+      "usage_guidance": [
+        "Introduce cautiously and follow the product directions."
+      ],
+      "precautions": [
+        "May cause dryness, redness, or irritation.",
+        "Avoid during pregnancy and seek healthcare professional advice about use while breastfeeding."
+      ],
+      "sources": [
+        {
+          "title": "Retinoid or retinol?",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging/retinoid-retinol"
+        }
+      ]
+    },
+    {
+      "canonical_name": "retinoid",
+      "category": "retinoid",
+      "potential_benefits": [
+        "Retinoids are a family of vitamin A-related ingredients used for concerns including acne and signs of skin aging, depending on the specific ingredient."
+      ],
+      "usage_guidance": [
+        "Check which specific retinoid your product contains, since strength and risks differ."
+      ],
+      "precautions": [
+        "Strength, indications, availability, and risks differ across retinoids.",
+        "Pregnancy-related precautions should be applied conservatively; consult a healthcare professional."
+      ],
+      "sources": [
+        {
+          "title": "Retinoid or retinol?",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging/retinoid-retinol"
+        }
+      ],
+      "llm_guidance": [
+        "Identify the specific retinoid before providing ingredient-specific recommendations."
+      ]
+    },
+    {
+      "canonical_name": "tretinoin",
+      "category": "retinoid",
+      "potential_benefits": [
+        "A topical prescription retinoid used for acne and certain other skin conditions."
+      ],
+      "usage_guidance": [
+        "Use only as directed by the prescribing healthcare professional."
+      ],
+      "precautions": [
+        "May cause dryness, redness, peeling, or irritation.",
+        "Avoid during pregnancy and consult a healthcare professional about pregnancy or breastfeeding.",
+        "Use sun protection and follow professional guidance about other active ingredients."
+      ],
+      "sources": [
+        {
+          "title": "Retinoid or retinol?",
+          "organization": "American Academy of Dermatology",
+          "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging/retinoid-retinol"
+        }
+      ]
+    }
+  ],
+  "notes": "User-facing fields: potential_benefits, usage_guidance, precautions, sources. llm_guidance holds instructions for the language model only and is never shown to users."
+}

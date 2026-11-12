@@ -1,0 +1,213 @@
+{
+  "title": "LLM evaluation - LIVE (llama3.2:3b)",
+  "mode": "live",
+  "model": "llama3.2:3b",
+  "generated_utc": "2026-11-04T18:13:24.467942+00:00",
+  "duration_seconds": 78.9,
+  "report": {
+    "total_runs": 1,
+    "cases": 1,
+    "repeat": 1,
+    "raw": {
+      "structure": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "sunscreen_am": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "sunscreen_not_night": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "one_strong_per_routine": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "no_hallucinated_actives": {
+        "violations": 0,
+        "applicable": 1
+      }
+    },
+    "final": {
+      "structure": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "sunscreen_am": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "sunscreen_not_night": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "one_strong_per_routine": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "no_hallucinated_actives": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "order": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "cleanser_present": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "moisturizer_present": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "no_product_lost": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "conflicts_reported": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "schedule_ok": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "no_generic_items": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "no_invisible_chars": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "summary_ok": {
+        "violations": 0,
+        "applicable": 1
+      },
+      "notes_ok": {
+        "violations": 0,
+        "applicable": 1
+      }
+    },
+    "violations": [],
+    "degraded_runs": 0,
+    "llm_error_runs": 0,
+    "routines_changed_by_safety_engine": 1,
+    "mean_edits_per_run": 4,
+    "latency_seconds": {
+      "mean": 76.85,
+      "median": 76.85,
+      "max": 76.85
+    },
+    "consistency": null,
+    "runs": [
+      {
+        "case": "C29",
+        "run": 1,
+        "seconds": 76.85,
+        "degraded": false,
+        "llm_error": null,
+        "raw_morning": [
+          "<user_input>Glycolic Acid Serum</user_input>",
+          "<user_input>Gentle Fragrance-Free Cleanser</user_input>",
+          "<user_input>Sunscreen SPF 30+</user_input>",
+          "<user_input>Hydrating Moisturizer</user_input>"
+        ],
+        "raw_night": [
+          "<user_input>Gentle Fragrance-Free Cleanser</user_input>",
+          "<user_input>Lactic Acid Toner</user_input>",
+          "<user_input>Hydrating Moisturizer</user_input>"
+        ],
+        "final_morning": [
+          "Gentle Fragrance-Free Cleanser",
+          "Hydrating Moisturizer",
+          "Sunscreen SPF 30+"
+        ],
+        "final_night": [
+          "Gentle Fragrance-Free Cleanser",
+          "Glycolic acid serum",
+          "Hydrating Moisturizer"
+        ],
+        "raw_violations": {},
+        "final_violations": {}
+      }
+    ]
+  },
+  "malformed_response_tests": [
+    {
+      "response": "LLM raises an exception",
+      "crashed": null,
+      "degraded": true,
+      "violations": {}
+    },
+    {
+      "response": "returns None",
+      "crashed": null,
+      "degraded": true,
+      "violations": {}
+    },
+    {
+      "response": "empty dict",
+      "crashed": null,
+      "degraded": false,
+      "violations": {}
+    },
+    {
+      "response": "empty lists",
+      "crashed": null,
+      "degraded": false,
+      "violations": {}
+    },
+    {
+      "response": "string instead of list",
+      "crashed": null,
+      "degraded": false,
+      "violations": {}
+    },
+    {
+      "response": "wrong item types",
+      "crashed": null,
+      "degraded": false,
+      "violations": {}
+    },
+    {
+      "response": "list instead of dict",
+      "crashed": null,
+      "degraded": true,
+      "violations": {}
+    },
+    {
+      "response": "huge strings",
+      "crashed": null,
+      "degraded": false,
+      "violations": {}
+    },
+    {
+      "response": "invisible/control characters",
+      "crashed": null,
+      "degraded": false,
+      "violations": {}
+    },
+    {
+      "response": "prompt-injection in items",
+      "crashed": null,
+      "degraded": false,
+      "violations": {}
+    },
+    {
+      "response": "extra / odd keys",
+      "crashed": null,
+      "degraded": false,
+      "violations": {}
+    },
+    {
+      "response": "None lists",
+      "crashed": null,
+      "degraded": false,
+      "violations": {}
+    }
+  ]
+}

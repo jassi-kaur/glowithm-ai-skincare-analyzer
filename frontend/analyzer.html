@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Leave empty for local development. For a deployed backend on another
+         domain, set e.g. content="https://api.example.com" -->
+    <meta name="glowithm-api-base" content="">
+
+    <title>AI Skincare Builder | Glowithm</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/analyzer.css">
+
+</head>
+<body>
+
+
+
+<!-- ================================= NAVBAR ================================= -->
+<div id="navbar"></div>
+
+
+
+<!-- =========================== Analyzer Hero  ================================== -->
+<section class="analyzer-hero">
+
+    <!-- Subtle AI background -->
+    <div class="hero-ai-orb orb-one"></div>
+    <div class="hero-ai-orb orb-two"></div>
+
+    <div class="analyzer-hero-content">
+
+        <div class="analyzer-hero-badge">
+            <span class="ai-dot"></span>
+            Glowithm Intelligence
+        </div>
+
+        <h1>
+            Your Skin,
+            <span>Understood by AI.</span>
+        </h1>
+
+        <p>
+            Discover a personalized skincare routine built around
+            your skin, concerns, and products you already use.
+        </p>
+
+        <a href="#analyzer-workspace" class="analyzer-hero-btn">
+            Start Analysis
+            <span>→</span>
+        </a>
+
+        <div class="hero-scroll-hint">
+            <span class="scroll-arrow">↓</span>
+            Explore your skin analysis
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- ========================================= GLOWITHM AI ANALYZER WORKSPACE ========================================= -->
+<section class="ai-workspace" id="analyzer-workspace">
+
+    <div class="workspace-container">
+
+
+        <!-- =====================================
+             LEFT — ANALYZER PROGRESS
+        ====================================== -->
+
+        <aside class="workspace-progress">
+
+            <div class="progress-heading">
+                <span>YOUR ANALYSIS</span>
+            </div>
+
+
+            <div class="progress-flow">
+
+                <!-- STEP 01 -->
+
+                <div class="progress-step active"
+                     data-progress="1"
+                     id="progress-step-1">
+
+                    <div class="progress-marker">
+                        <span>01</span>
+                    </div>
+
+                    <div class="progress-info">
+                        <span class="progress-title">
+                            Skin
+                        </span>
+
+                        <span class="progress-status">
+                            Let's understand your skin
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="progress-connector"></div>
+
+
+                <!-- STEP 02 -->
+
+                <div class="progress-step"
+                     data-progress="2"
+                     id="progress-step-2">
+
+                    <div class="progress-marker">
+                        <span>02</span>
+                    </div>
+
+                    <div class="progress-info">
+                        <span class="progress-title">
+                            Concerns
+                        </span>
+
+                        <span class="progress-status">
+                            What would you like to improve?
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="progress-connector"></div>
+
+
+                <!-- STEP 03 -->
+
+                <div class="progress-step"
+                     data-progress="3"
+                     id="progress-step-3">
+
+                    <div class="progress-marker">
+                        <span>03</span>
+                    </div>
+
+                    <div class="progress-info">
+                        <span class="progress-title">
+                            Products
+                        </span>
+
+                        <span class="progress-status">
+                            Your current routine
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="progress-connector"></div>
+
+
+                <!-- STEP 04 -->
+
+                <div class="progress-step"
+                     data-progress="4"
+                     id="progress-step-4">
+
+                    <div class="progress-marker">
+                        <span>04</span>
+                    </div>
+
+                    <div class="progress-info">
+                        <span class="progress-title">
+                            Analysis
+                        </span>
+
+                        <span class="progress-status">
+                            Glowithm AI
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Small AI indicator -->
+
+            <div class="progress-ai-note">
+
+                <span class="ai-note-dot"></span>
+
+                <span>
+                    AI guided analysis
+                </span>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================
+             RIGHT — MAIN WORKSPACE
+        ====================================== -->
+
+        <main class="workspace-panel">
+
+
+            <!-- =================================
+                 STEP 01 — SKIN TYPE
+            ================================== -->
+
+            <div class="workspace-state active"
+                 id="step-skin"
+                 data-step="1">
+
+
+                <div class="state-header">
+
+                    <span class="state-eyebrow">
+                        STEP 01 · SKIN PROFILE
+                    </span>
+
+                    <h2>
+                        First, let's understand
+                        <span>your skin.</span>
+                    </h2>
+
+                    <p>
+                        Choose the option that best describes
+                        your skin right now.
+                    </p>
+
+                </div>
+
+
+                <!-- Skin Type Options -->
+
+                <div class="skin-type-grid">
+
+                    <button type="button"
+                            class="skin-type-card"
+                            data-skin-type="Oily">
+
+                        <span class="skin-card-icon">
+                            ◌
+                        </span>
+
+                        <span class="skin-card-name">
+                            Oily
+                        </span>
+
+                    </button>
+
+
+                    <button type="button"
+                            class="skin-type-card"
+                            data-skin-type="Dry">
+
+                        <span class="skin-card-icon">
+                            ◌
+                        </span>
+
+                        <span class="skin-card-name">
+                            Dry
+                        </span>
+
+                    </button>
+
+
+                    <button type="button"
+                            class="skin-type-card"
+                            data-skin-type="Combination">
+
+                        <span class="skin-card-icon">
+                            ◌
+                        </span>
+
+                        <span class="skin-card-name">
+                            Combination
+                        </span>
+
+                    </button>
+
+
+                    <button type="button"
+                            class="skin-type-card"
+                            data-skin-type="Normal">
+
+                        <span class="skin-card-icon">
+                            ◌
+                        </span>
+
+                        <span class="skin-card-name">
+                            Normal
+                        </span>
+
+                    </button>
+
+
+                    <button type="button"
+                            class="skin-type-card"
+                            data-skin-type="Sensitive">
+
+                        <span class="skin-card-icon">
+                            ◌
+                        </span>
+
+                        <span class="skin-card-name">
+                            Sensitive
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <div class="state-footer-hint">
+                    <span>Choose one</span>
+                    <span>→</span>
+                    <span>Your next step will appear</span>
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 STEP 02 — CONCERNS
+            ================================== -->
+
+            <div class="workspace-state"
+                 id="step-concerns"
+                 data-step="2">
+
+
+                <div class="state-header">
+
+                    <span class="state-eyebrow">
+                        STEP 02 · SKIN CONCERNS
+                    </span>
+
+                    <h2>
+                        What would you like
+                        <span>to improve?</span>
+                    </h2>
+
+                    <p>
+                        Select everything you'd like
+                        Glowithm to focus on.
+                    </p>
+
+                </div>
+
+
+                <!-- Concerns -->
+
+                <div class="concern-grid">
+
+                    <button type="button"
+                            class="concern-card"
+                            data-concern="Acne & Breakouts">
+
+                        <span>
+                            Acne & Breakouts
+                        </span>
+
+                        <span class="concern-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+                    <button type="button"
+                            class="concern-card"
+                            data-concern="Dark Spots & Pigmentation">
+
+                        <span>
+                            Dark Spots & Pigmentation
+                        </span>
+
+                        <span class="concern-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+                    <button type="button"
+                            class="concern-card"
+                            data-concern="Dryness & Dehydration">
+
+                        <span>
+                            Dryness & Dehydration
+                        </span>
+
+                        <span class="concern-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+                    <button type="button"
+                            class="concern-card"
+                            data-concern="Uneven Skin Tone">
+
+                        <span>
+                            Uneven Skin Tone
+                        </span>
+
+                        <span class="concern-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+                    <button type="button"
+                            class="concern-card"
+                            data-concern="Sensitivity & Redness">
+
+                        <span>
+                            Sensitivity & Redness
+                        </span>
+
+                        <span class="concern-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+                    <button type="button"
+                            class="concern-card"
+                            data-concern="Fine Lines & Aging">
+
+                        <span>
+                            Fine Lines & Aging
+                        </span>
+
+                        <span class="concern-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- Pregnancy / breastfeeding (optional) -->
+
+                <label class="pregnancy-option" for="pregnancy-checkbox">
+                    <input type="checkbox" id="pregnancy-checkbox">
+                    <span class="pregnancy-option-text">
+                        <strong>I'm pregnant, trying to conceive, or breastfeeding</strong>
+                        <small>
+                            Optional. Glowithm will leave retinoids out of your
+                            routine and flag other actives to check with your doctor.
+                        </small>
+                    </span>
+                </label>
+
+
+                <!-- Continue -->
+
+                <div class="state-action">
+
+                    <div class="action-buttons">
+                        <button type="button"
+                                class="workspace-back"
+                                id="back-to-skin">
+                            ← Back
+                        </button>
+
+                        <button type="button"
+                                class="workspace-next"
+                                id="concerns-next">
+                            Continue
+                            <span>→</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 STEP 03 — CURRENT PRODUCTS
+            ================================== -->
+
+
+<div class="workspace-state"
+     id="step-products"
+     data-step="3">
+
+    <div class="state-header">
+
+        <span class="state-eyebrow">
+            STEP 03 · CURRENT ROUTINE
+        </span>
+
+        <h2>
+            What are you
+            <span>already using?</span>
+        </h2>
+
+        <p>
+            Add your current products so Glowithm
+            can understand the ingredients you're already using.
+        </p>
+
+    </div>
+
+
+    <!-- Product Input -->
+
+    <div class="product-input-area">
+
+        <div class="product-input">
+
+            <input
+                type="text"
+                id="product-input"
+                aria-label="Add a product or ingredient"
+                maxlength="200"
+                aria-describedby="product-helper"
+                placeholder="Enter a product or ingredient..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                id="add-product-btn">
+
+                <span>+</span>
+                Add Product
+
+            </button>
+
+        </div>
+
+
+        <!-- Added Products -->
+
+<div class="product-list" id="product-list">
+
+    <div class="product-empty" id="product-empty">
+        <span>＋</span>
+        <p>No products added yet</p>
+    </div>
+
+</div>
+
+
+        <p class="product-helper" id="product-helper">
+            Add cleansers, serums, moisturizers,
+            sunscreens, or active ingredients.
+            Separate several products with commas
+            (up to 15 products, 60 characters each).
+        </p>
+
+    </div>
+
+
+            <!-- Continue with Back Button -->
+            <div class="state-action">
+
+                <div class="action-buttons">
+                    <button type="button"
+                            class="workspace-back"
+                            id="back-to-concerns">
+                        ← Back
+                    </button>
+
+                    <button type="button"
+                            class="workspace-next"
+                            id="products-next">
+                        Continue
+                        <span>→</span>
+                    </button>
+                </div>
+
+            </div>
+
+</div>
+
+
+
+            <!-- =================================
+                 STEP 04 — ANALYSIS READY
+            ================================== -->
+
+            <div class="workspace-state"
+                 id="step-analysis"
+                 data-step="4">
+
+
+                <div class="analysis-ready">
+
+
+                    <!-- AI Visual -->
+
+                    <div class="analysis-ai-visual">
+
+                        <div class="ai-orbit ai-orbit-one"></div>
+
+                        <div class="ai-orbit ai-orbit-two"></div>
+
+                        <div class="ai-orbit ai-orbit-three"></div>
+
+
+                        <div class="ai-core">
+
+                            <span>✦</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- AI Content -->
+
+                    <div class="state-header">
+
+                        <span class="state-eyebrow">
+                            STEP 04 · GLOWITHM AI
+                        </span>
+
+                        <h2>
+                            Your skin profile
+                            <span>is ready.</span>
+                        </h2>
+
+                        <p>
+                            Glowithm will combine your skin type,
+                            concerns, and current products to
+                            build your personalized routine.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Profile Summary -->
+
+                    <div class="analysis-summary">
+
+                        <div class="summary-item">
+
+                            <span class="summary-label">
+                                SKIN
+                            </span>
+
+                            <span class="summary-value"
+                                  id="summary-skin">
+                                —
+                            </span>
+
+                        </div>
+
+
+                        <div class="summary-item">
+
+                            <span class="summary-label">
+                                CONCERNS
+                            </span>
+
+                            <span class="summary-value"
+                                  id="summary-concerns">
+                                —
+                            </span>
+
+                        </div>
+
+
+                        <div class="summary-item">
+
+                            <span class="summary-label">
+                                PRODUCTS
+                            </span>
+
+                            <span class="summary-value"
+                                  id="summary-products">
+                                —
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+            <p class="pregnancy-note" id="summary-pregnancy-note" hidden>
+                Pregnancy-safe mode is on: retinoids will be left out of your routine.
+            </p>
+
+            <p class="analyzer-disclaimer" data-disclaimer role="note"></p>
+
+            <!-- Action Buttons -->
+            <div class="analysis-actions">
+
+                <button type="button"
+                        class="workspace-back"
+                        id="back-to-products">
+                    ← Back
+                </button>
+
+                <button type="button"
+                        class="analyze-skin-btn"
+                        id="analyze-btn">
+                    <span>Analyze My Skin</span>
+                    <span class="analyze-arrow">→</span>
+                </button>
+
+            </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 AI PROCESSING STATE
+            ================================== -->
+
+            <div class="workspace-state processing-state"
+                 id="ai-processing"
+                 data-step="processing">
+
+
+                <div class="processing-content">
+
+
+                    <!-- Processing Visual -->
+
+                    <div class="processing-visual">
+
+                        <div class="processing-orbit orbit-one"></div>
+
+                        <div class="processing-orbit orbit-two"></div>
+
+                        <div class="processing-orbit orbit-three"></div>
+
+
+                        <div class="processing-core">
+
+                            <span>✦</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <span class="processing-eyebrow">
+                        GLOWITHM AI
+                    </span>
+
+
+                    <h2 id="processing-title">
+                        Understanding
+                        <span>your skin...</span>
+                    </h2>
+
+
+                    <p id="processing-description">
+                        Analyzing your profile and concerns.
+                    </p>
+
+
+                    <!-- Dynamic Processing Steps -->
+
+                    <div class="processing-status">
+
+                        <div class="processing-status-item active"
+                             id="process-profile">
+
+                            <span class="status-dot"></span>
+
+                            Understanding your profile
+
+                        </div>
+
+
+                        <div class="processing-status-item"
+                             id="process-concerns">
+
+                            <span class="status-dot"></span>
+
+                            Reviewing your concerns
+
+                        </div>
+
+
+                        <div class="processing-status-item"
+                             id="process-products">
+
+                            <span class="status-dot"></span>
+
+                            Checking your ingredients
+
+                        </div>
+
+
+                        <div class="processing-status-item"
+                             id="process-routine">
+
+                            <span class="status-dot"></span>
+
+                            Building your routine
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================  ANALYZER RESULTS SECTION ======================================================== -->
+
+<section class="results-section" id="resultsSection" hidden>
+
+    <!-- ================= RESULT HEADER ================= -->
+    <div class="results-header">
+
+        <div class="results-status">
+            <span class="status-dot"></span>
+            Analysis Complete
+        </div>
+
+        <h2>
+            Your Personalized
+            <span>Skin Analysis</span>
+        </h2>
+
+        <p>
+            Glowithm analyzed your skin type, concerns, and current
+            products to create a routine tailored to you.
+        </p>
+
+        <div class="results-summary">
+            <span id="resultSkinType">Combination Skin</span>
+            <span>•</span>
+            <span id="resultConcernCount">3 Concerns</span>
+            <span>•</span>
+            <span id="resultProductCount">2 Products Analyzed</span>
+        </div>
+
+    </div>
+
+
+    <!-- ================= BUILT-IN ROUTINE NOTICE ================= -->
+    <div class="result-banner" id="degradedBanner" role="status" hidden>
+        <strong>Built-in routine shown.</strong>
+        The AI model wasn't available, so Glowithm used its built-in safety rules.
+        This is a safe starting point, but it wasn't personalized by the AI.
+    </div>
+
+    <!-- ================= ROUTINE AT A GLANCE ================= -->
+    <div class="result-block summary-block" id="routineSummaryBlock" hidden>
+        <h3 class="summary-title">Your routine at a glance</h3>
+        <p id="routineSummaryText"></p>
+    </div>
+
+
+    <!-- ================= SKIN PROFILE ================= -->
+    <div class="result-block skin-profile-block">
+
+        <div class="result-block-header">
+            <div>
+                <span class="result-eyebrow">01</span>
+                <h3>Your Skin Profile</h3>
+            </div>
+
+            <span class="ai-label">✦ AI Analysis</span>
+        </div>
+
+        <div class="skin-profile-grid">
+
+            <div class="profile-item">
+                <span class="profile-label">Skin Type</span>
+                <strong id="profileSkinType">Combination</strong>
+            </div>
+
+            <div class="profile-item">
+                <span class="profile-label">Primary Concern</span>
+                <strong id="profilePrimaryConcern">Acne & Breakouts</strong>
+            </div>
+
+            <div class="profile-item">
+                <span class="profile-label">Other Concerns</span>
+                <strong id="profileOtherConcerns">
+                    Dark Spots, Uneven Tone
+                </strong>
+            </div>
+
+            <div class="profile-item">
+                <span class="profile-label">Routine Focus</span>
+                <strong id="profileRoutineFocus">
+                    Balance + Repair
+                </strong>
+            </div>
+
+        </div>
+
+        <!-- Concern Tags -->
+        <div class="profile-concerns">
+
+            <span class="concern-tag">Acne</span>
+            <span class="concern-tag">Dark Spots</span>
+            <span class="concern-tag">Uneven Tone</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= PERSONALIZED ROUTINE ================= -->
+    <div class="result-block routine-block">
+
+        <div class="result-block-header routine-header">
+
+            <div>
+                <span class="result-eyebrow">02</span>
+                <h3>Your Personalized Routine</h3>
+            </div>
+
+            <p>
+                A simple routine built around your skin's needs.
+            </p>
+
+        </div>
+
+
+        <div class="routine-grid">
+
+            <!-- MORNING -->
+            <div class="routine-card morning-routine">
+
+                <div class="routine-card-header">
+
+                    <div class="routine-icon">
+                        ☀
+                    </div>
+
+                    <div>
+                        <span>AM ROUTINE</span>
+                        <h4>Morning</h4>
+                    </div>
+
+                </div>
+
+
+                <div class="routine-steps" id="morningRoutine">
+
+                    <!-- JS will populate these -->
+
+                </div>
+
+            </div>
+
+
+            <!-- NIGHT -->
+            <div class="routine-card night-routine">
+
+                <div class="routine-card-header">
+
+                    <div class="routine-icon">
+                        ☾
+                    </div>
+
+                    <div>
+                        <span>PM ROUTINE</span>
+                        <h4>Night</h4>
+                    </div>
+
+                </div>
+
+
+                <div class="routine-steps" id="nightRoutine">
+
+                    <!-- JS will populate these -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="alternateNightsSection" class="routine-card" hidden>
+            <h3>Alternate Nights</h3>
+            <p>Use these products on separate nights rather than layering them together.</p>
+            <div id="alternateNightsRoutine"></div>
+        </div>
+
+        <div id="weeklyScheduleSection" class="routine-card" hidden>
+            <h3>Suggested Weekly Schedule</h3>
+            <p>Use this as a planning guide. Follow product directions and avoid combining conflicting actives.</p>
+            <div id="weeklyScheduleRoutine"></div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- ================= INGREDIENT INTELLIGENCE ================= -->
+    <div class="result-block ingredient-block">
+
+        <div class="result-block-header">
+
+            <div>
+                <span class="result-eyebrow">03</span>
+                <h3>Ingredient Intelligence</h3>
+            </div>
+
+            <span class="ai-label">✦ Compatibility Check</span>
+
+        </div>
+
+
+        <!-- Conflict State -->
+        <div class="ingredient-warning" id="ingredientWarnings">
+
+            <div class="warning-icon">
+                ⚠
+            </div>
+
+            <div class="warning-content">
+
+                <span class="warning-label">
+                    Something worth knowing
+                </span>
+
+                <h4 id="conflictTitle">
+                    Ingredient Combination Detected
+                </h4>
+
+                <p id="conflictMessage">
+                    Your products contain ingredients that may be
+                    better used separately.
+                </p>
+
+                <ul id="conflictList" style="display: none; margin: 10px 0 0; padding-left: 20px;"></ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- No Conflict State -->
+        <div class="ingredient-safe" id="ingredientSafe">
+
+            <div class="safe-icon">
+                ✓
+            </div>
+
+            <div>
+                <h4>Your Products Look Compatible</h4>
+
+                <p>
+                    We didn't detect any major ingredient conflicts
+                    in the products you entered.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= SAFETY NOTES ================= -->
+    <div class="result-block safety-notes-block" id="safety-notes">
+        <!-- JS will populate safety information -->
+    </div>
+
+
+    <!-- ================= ABOUT YOUR INGREDIENTS ================= -->
+    <div class="result-block ingredient-notes-block" id="ingredientNotesBlock" hidden>
+
+        <div class="result-block-header">
+            <div>
+                <h3>About your ingredients</h3>
+                <p class="ingredient-notes-intro">
+                    General information about the ingredients Glowithm recognised in your
+                    products, with sources. Not medical advice.
+                </p>
+            </div>
+        </div>
+
+        <div id="ingredientNotesList"></div>
+
+    </div>
+
+
+    <!-- ================= DISCLAIMER ================= -->
+    <div class="result-block disclaimer-block" role="note">
+        <h4 class="disclaimer-title">Important notice</h4>
+        <p data-disclaimer></p>
+    </div>
+
+    <!-- ================= WHY THIS ROUTINE ================= -->
+    <div class="result-block why-routine-block">
+
+        <div class="result-block-header">
+
+            <div>
+                <span class="result-eyebrow">04</span>
+                <h3>Why This Routine?</h3>
+            </div>
+
+            <span class="ai-label">✦ Glowithm Insight</span>
+
+        </div>
+
+
+        <div class="routine-reasons">
+
+            <div class="reason-card">
+
+                <span class="reason-number">01</span>
+
+                <h4>Target</h4>
+
+                <p>
+                    Your routine focuses on your primary skin
+                    concerns without overwhelming your skin.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <span class="reason-number">02</span>
+
+                <h4>Balance</h4>
+
+                <p>
+                    Active ingredients are balanced with hydration
+                    and barrier-supporting steps.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <span class="reason-number">03</span>
+
+                <h4>Protect</h4>
+
+                <p>
+                    Your routine supports long-term skin health
+                    alongside your immediate concerns.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CURRENT PRODUCTS ================= -->
+    <div class="result-block products-result-block">
+
+        <div class="result-block-header">
+
+            <div>
+                <span class="result-eyebrow">05</span>
+                <h3>Your Current Products</h3>
+            </div>
+
+            <span class="ai-label">✦ Analyzed</span>
+
+        </div>
+
+
+        <div class="analyzed-products" id="analyzedProducts">
+
+            <!-- JS will populate product tags -->
+
+        </div>
+
+
+        <div id="product-knowledge-state" hidden></div>
+
+        <div id="current-products-analysis" hidden></div>
+
+        <div class="product-analysis-message">
+
+            <span>✦</span>
+
+            <p>
+                Glowithm considered your existing products while
+                building your personalized routine.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= PERSONALIZED TIPS ================= -->
+    <div class="result-block tips-block">
+
+        <div class="result-block-header">
+
+            <div>
+                <span class="result-eyebrow">06</span>
+                <h3>Personalized Tips</h3>
+            </div>
+
+            <span class="ai-label">✦ AI Insights</span>
+
+        </div>
+
+
+        <div class="tips-list" id="personalizedTips">
+
+            <!-- JS will populate tips -->
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= RESULT FOOTER ================= -->
+    <div class="results-footer">
+
+        <div class="results-footer-content">
+
+            <span class="footer-sparkle">✦</span>
+
+            <h3>
+                Your routine is ready.
+            </h3>
+
+            <p>
+                Keep it simple, stay consistent, and give your skin
+                time to respond.
+            </p>
+
+        </div>
+
+
+
+        <div class="result-actions">
+
+            <button
+                type="button"
+                class="secondary-result-btn"
+                id="analyzeAgainBtn">
+                ↻ Analyze Again
+            </button>
+
+            <button
+                type="button"
+                class="primary-result-btn"
+                id="saveRoutineBtn">
+                ♡ Save Routine
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ==================== FOOTER ==================== -->
+<div id="footer"></div>
+
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<!-- jsPDF: a local copy works offline (run tools/vendor_jspdf.py once); the CDN is the fallback -->
+<script src="js/vendor/jspdf.umd.min.js"></script>
+<script>
+    if (!window.jspdf) {
+        document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"><\/script>');
+    }
+</script>
+
+<script src="js/analyzer-utils.js"></script>
+
+<script src="js/analyzer.js"></script>
+
+<script src="js/components.js"></script>
+
+
+</body>
+</html>
